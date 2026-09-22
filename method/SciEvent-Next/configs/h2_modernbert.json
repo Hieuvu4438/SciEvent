@@ -1,0 +1,8 @@
+{
+  "model_name": "answerdotai/ModernBERT-large",
+  "epochs": 30, "batch_size": 8,
+  "lr_encoder": 2e-5, "lr_head": 1e-4, "llrd": 0.9,
+  "use_crf": false, "dropout": 0.15,
+  "w_role": 1.0, "w_aao": 0.5, "w_type": 1.0,
+  "dev_tau": 0.7, "dev_min_len": 3
+}

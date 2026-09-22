@@ -1,0 +1,9 @@
+checkpoints/
+artifacts/preds/
+artifacts/runs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.pt
+*.bin
+*.safetensors

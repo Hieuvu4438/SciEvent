@@ -1,0 +1,12 @@
+{
+  "run_name": "h1_deberta_s42",
+  "model_name": "microsoft/deberta-v3-large",
+  "seed": 42,
+  "epochs": 40,
+  "batch_size": 8,
+  "lr_encoder": 1e-5,
+  "lr_head": 1e-4,
+  "w_role": 1.0,
+  "w_aao": 0.5,
+  "w_type": 0.5
+}

@@ -44,11 +44,11 @@ class SmiPoller(threading.Thread):
         super().__init__(daemon=True)
         self.interval = interval
         self.peak_mib = 0
-        self._stop = threading.Event()
+        self._stop_event = threading.Event()
 
     def run(self) -> None:
         pid = str(os.getpid())
-        while not self._stop.is_set():
+        while not self._stop_event.is_set():
             try:
                 out = subprocess.run(
                     ["nvidia-smi",
@@ -62,10 +62,10 @@ class SmiPoller(threading.Thread):
                         self.peak_mib = max(self.peak_mib, int(parts[1]))
             except Exception:
                 pass
-            self._stop.wait(self.interval)
+            self._stop_event.wait(self.interval)
 
     def stop(self) -> int:
-        self._stop.set()
+        self._stop_event.set()
         self.join(timeout=5)
         return self.peak_mib
 
