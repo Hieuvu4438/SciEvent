@@ -3,33 +3,33 @@
   "split": "dev",
   "headline_metric": "arg_c_iou_f1 (official evaluator, untouched upstream)",
   "our_results": {
-    "h0_span": {
-      "experiment": "h0_span",
+    "h0_cand.k128_s2048": {
+      "experiment": "h0_cand.k128_s2048",
       "reproduced": true,
       "source": "our run",
       "arg_c_iou_f1": {
-        "mean": 31.893333333333334,
-        "std": 1.8824009491426996,
-        "median": 32.95,
-        "n": 3
+        "mean": 33.01,
+        "std": 0.0,
+        "median": 33.01,
+        "n": 1
       },
       "arg_c_exact_f1": {
-        "mean": 23.363333333333333,
-        "std": 1.6530678550299542,
-        "median": 24.19,
-        "n": 3
+        "mean": 24.44,
+        "std": 0.0,
+        "median": 24.44,
+        "n": 1
       },
       "arg_i_iou_f1": {
-        "mean": 38.48,
-        "std": 0.857496355677386,
-        "median": 38.21,
-        "n": 3
+        "mean": 39.44,
+        "std": 0.0,
+        "median": 39.44,
+        "n": 1
       },
       "arg_i_exact_f1": {
-        "mean": 27.886666666666667,
-        "std": 1.6066839556469514,
-        "median": 28.11,
-        "n": 3
+        "mean": 29.37,
+        "std": 0.0,
+        "median": 29.37,
+        "n": 1
       },
       "seeds": [
         {
@@ -44,7 +44,40 @@
           "peak_infer_allocated_gib": 5.67966890335083,
           "runtime_seconds": 689.5574467182159,
           "checkpoint_sha256": "441c1c55a3b4e415ec32f495834f85ea362ec28a52876bee2ec664398cf2092e"
-        },
+        }
+      ],
+      "peak_train_allocated_gib": 7.9222540855407715,
+      "peak_infer_allocated_gib": 5.67966890335083
+    },
+    "h0_span": {
+      "experiment": "h0_span",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 31.335,
+        "std": 2.2839549032325515,
+        "median": 31.335,
+        "n": 2
+      },
+      "arg_c_exact_f1": {
+        "mean": 22.825000000000003,
+        "std": 1.930401512639275,
+        "median": 22.825000000000003,
+        "n": 2
+      },
+      "arg_i_iou_f1": {
+        "mean": 38.0,
+        "std": 0.2969848480983512,
+        "median": 38.0,
+        "n": 2
+      },
+      "arg_i_exact_f1": {
+        "mean": 27.145,
+        "std": 1.3647160876900366,
+        "median": 27.145,
+        "n": 2
+      },
+      "seeds": [
         {
           "seed": 42,
           "experiment_id": "h0_span.seed42",
@@ -72,7 +105,7 @@
           "checkpoint_sha256": "ee58cec549c4a151c6a11763bb8d1e377edb9942d1eeae2bbcd7105d36949126"
         }
       ],
-      "peak_train_allocated_gib": 7.9222540855407715,
+      "peak_train_allocated_gib": 7.9202375411987305,
       "peak_infer_allocated_gib": 5.681952953338623
     },
     "h1_tuple": {
@@ -296,28 +329,28 @@
       "reproduced": true,
       "source": "our run",
       "arg_c_iou_f1": {
-        "mean": 32.705,
-        "std": 1.2220270046115984,
-        "median": 33.114999999999995,
-        "n": 6
+        "mean": 31.826666666666668,
+        "std": 1.1161242463692516,
+        "median": 31.46,
+        "n": 3
       },
       "arg_c_exact_f1": {
-        "mean": 23.593333333333334,
-        "std": 1.2150665276710848,
-        "median": 24.130000000000003,
-        "n": 6
+        "mean": 23.013333333333332,
+        "std": 1.6314819439188812,
+        "median": 22.3,
+        "n": 3
       },
       "arg_i_iou_f1": {
-        "mean": 39.24,
-        "std": 0.9183463398957947,
-        "median": 39.114999999999995,
-        "n": 6
+        "mean": 38.946666666666665,
+        "std": 0.5236729259120925,
+        "median": 38.68,
+        "n": 3
       },
       "arg_i_exact_f1": {
-        "mean": 27.823333333333334,
-        "std": 0.832314043295358,
-        "median": 28.04,
-        "n": 6
+        "mean": 27.80333333333333,
+        "std": 1.1613067352484157,
+        "median": 27.99,
+        "n": 3
       },
       "seeds": [
         {
@@ -334,19 +367,6 @@
           "checkpoint_sha256": "43653887b2cdacc01c30df217a9dd51b520303713ab731de86449433dca9ea01"
         },
         {
-          "seed": 13,
-          "experiment_id": "h3b_k5.seed13",
-          "arg_c_iou_f1": 33.62,
-          "arg_c_exact_f1": 24.26,
-          "arg_i_iou_f1": 39.57,
-          "arg_i_exact_f1": 28.3,
-          "best_dev_epoch": 11,
-          "peak_train_allocated_gib": 7.920196533203125,
-          "peak_infer_allocated_gib": 5.6739654541015625,
-          "runtime_seconds": 1001.176552772522,
-          "checkpoint_sha256": "afda7b8591afff5f329e81251d23c24adf2b9ea2a2179200bf52790570fa4cc1"
-        },
-        {
           "seed": 42,
           "experiment_id": "h3_adaptive_on_h0.seed42",
           "arg_c_iou_f1": 31.46,
@@ -358,6 +378,65 @@
           "peak_infer_allocated_gib": 5.6739654541015625,
           "runtime_seconds": 1068.4371438026428,
           "checkpoint_sha256": "90fcaef530873351997555928bc56cba5ab9e4e8fc32a5aafb1e17672c58a702"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h3_adaptive_on_h0.seed101",
+          "arg_c_iou_f1": 33.08,
+          "arg_c_exact_f1": 24.88,
+          "arg_i_iou_f1": 39.55,
+          "arg_i_exact_f1": 28.86,
+          "best_dev_epoch": 21,
+          "peak_train_allocated_gib": 7.921607971191406,
+          "peak_infer_allocated_gib": 5.6739654541015625,
+          "runtime_seconds": 1480.8259720802307,
+          "checkpoint_sha256": "3e0bffaa4b9df92ce2fbdad973c14fa273d9475c82f15eefb1f41efd3dc9c4f4"
+        }
+      ],
+      "peak_train_allocated_gib": 7.921607971191406,
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "h3b_k5": {
+      "experiment": "h3b_k5",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 33.583333333333336,
+        "std": 0.4162130864513184,
+        "median": 33.62,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 24.173333333333336,
+        "std": 0.14153915830374722,
+        "median": 24.25,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 39.53333333333333,
+        "std": 1.2554016621517352,
+        "median": 39.57,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 27.843333333333334,
+        "std": 0.6180884510596628,
+        "median": 28.09,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h3b_k5.seed13",
+          "arg_c_iou_f1": 33.62,
+          "arg_c_exact_f1": 24.26,
+          "arg_i_iou_f1": 39.57,
+          "arg_i_exact_f1": 28.3,
+          "best_dev_epoch": 11,
+          "peak_train_allocated_gib": 7.920196533203125,
+          "peak_infer_allocated_gib": 5.6739654541015625,
+          "runtime_seconds": 1001.176552772522,
+          "checkpoint_sha256": "afda7b8591afff5f329e81251d23c24adf2b9ea2a2179200bf52790570fa4cc1"
         },
         {
           "seed": 42,
@@ -374,19 +453,6 @@
         },
         {
           "seed": 101,
-          "experiment_id": "h3_adaptive_on_h0.seed101",
-          "arg_c_iou_f1": 33.08,
-          "arg_c_exact_f1": 24.88,
-          "arg_i_iou_f1": 39.55,
-          "arg_i_exact_f1": 28.86,
-          "best_dev_epoch": 21,
-          "peak_train_allocated_gib": 7.921607971191406,
-          "peak_infer_allocated_gib": 5.6739654541015625,
-          "runtime_seconds": 1480.8259720802307,
-          "checkpoint_sha256": "3e0bffaa4b9df92ce2fbdad973c14fa273d9475c82f15eefb1f41efd3dc9c4f4"
-        },
-        {
-          "seed": 101,
           "experiment_id": "h3b_k5.seed101",
           "arg_c_iou_f1": 33.98,
           "arg_c_exact_f1": 24.01,
@@ -397,6 +463,78 @@
           "peak_infer_allocated_gib": 5.6739654541015625,
           "runtime_seconds": 1180.2204127311707,
           "checkpoint_sha256": "c9a253931e5ac18cae60b47f69623596fffd10cf2945af4a401947d8169c911f"
+        }
+      ],
+      "peak_train_allocated_gib": 7.921607971191406,
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "h3b_k50": {
+      "experiment": "h3b_k50",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 33.376666666666665,
+        "std": 1.8477644149981176,
+        "median": 33.26,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 25.126666666666665,
+        "std": 1.545714505765322,
+        "median": 25.79,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 39.65,
+        "std": 1.6382612734237463,
+        "median": 40.15,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 28.75,
+        "std": 1.6827655808222366,
+        "median": 27.98,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h3b_k50.seed13",
+          "arg_c_iou_f1": 31.59,
+          "arg_c_exact_f1": 23.36,
+          "arg_i_iou_f1": 37.82,
+          "arg_i_exact_f1": 27.59,
+          "best_dev_epoch": 14,
+          "peak_train_allocated_gib": 7.920196533203125,
+          "peak_infer_allocated_gib": 5.6739654541015625,
+          "runtime_seconds": 1189.2128155231476,
+          "checkpoint_sha256": "a54bbad18a1ce4f869e8b32a748b7c08365af9c3b9e3c8c1fdd72daebb7aab0b"
+        },
+        {
+          "seed": 42,
+          "experiment_id": "h3b_k50.seed42",
+          "arg_c_iou_f1": 35.28,
+          "arg_c_exact_f1": 25.79,
+          "arg_i_iou_f1": 40.15,
+          "arg_i_exact_f1": 27.98,
+          "best_dev_epoch": 22,
+          "peak_train_allocated_gib": 7.921607971191406,
+          "peak_infer_allocated_gib": 5.6739654541015625,
+          "runtime_seconds": 1528.4625933170319,
+          "checkpoint_sha256": "977b12b7342054c08936ead977dd82900f187bf61bf09fb2a8e294fd424a2723"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h3b_k50.seed101",
+          "arg_c_iou_f1": 33.26,
+          "arg_c_exact_f1": 26.23,
+          "arg_i_iou_f1": 40.98,
+          "arg_i_exact_f1": 30.68,
+          "best_dev_epoch": 19,
+          "peak_train_allocated_gib": 7.921607971191406,
+          "peak_infer_allocated_gib": 5.6739654541015625,
+          "runtime_seconds": 1447.3744151592255,
+          "checkpoint_sha256": "eac9baa0e3a2a942803a86801b1761f6e88da91d6f11b9bf8ec86a41f3bdfa6c"
         }
       ],
       "peak_train_allocated_gib": 7.921607971191406,
@@ -456,7 +594,7 @@
       "split_identity_byte_verified": false,
       "literature_refreshed_to_execution_date": false
     },
-    "our_point_estimate": 31.893333333333334,
+    "our_point_estimate": 31.335,
     "best_paper_reported": {
       "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
       "venue": "EMNLP 2025",
@@ -471,9 +609,9 @@
       "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
       "reproduced": false
     },
-    "absolute_margin": -9.716666666666665,
+    "absolute_margin": -10.274999999999999,
     "permitted_wording": "no SOTA claim is supported by the current evidence",
     "protocol_note": "Paper-reported values are external reference points and were NOT rerun. Statistical significance is claimed only against our own matched H0/component ablations."
   },
-  "num_run_manifests": 18
+  "num_run_manifests": 21
 }

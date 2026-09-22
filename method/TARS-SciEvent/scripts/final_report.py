@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import statistics
 import sys
 from collections import defaultdict
@@ -40,9 +41,24 @@ def load_manifests(runs_dir: Path) -> list[dict]:
         if data.get("smoke_test"):
             continue
         data["_path"] = str(path)
-        data["_experiment"] = (data.get("config") or {}).get("experiment") or path.parent.name
+        data["_experiment"] = system_name(data, path)
         manifests.append(data)
     return manifests
+
+
+def system_name(manifest: dict, path: Path) -> str:
+    """Group runs by system, not by config file.
+
+    Two runs can share ``config.experiment`` yet be different systems, because
+    a CLI override (say a different prototype kappa) changed the architecture.
+    The run id carries that distinction, so strip only the seed suffix from it
+    and fall back to the config name when there is no run id.
+    """
+    run_id = manifest.get("experiment_id") or path.parent.name
+    stripped = re.sub(r"\.seed\d+$", "", run_id)
+    if stripped != run_id:
+        return stripped
+    return (manifest.get("config") or {}).get("experiment") or run_id
 
 
 def summarise(values: list[float]) -> dict:

@@ -1,5 +1,5 @@
 {
-  "experiment_id": "h0_cand.k128_s2048.seed13",
+  "experiment_id": "h0_span.seed13",
   "timestamp_utc": "2026-09-22T08:24:59Z",
   "upstream_scievent_commit": "49cf9769c28f5ed8b04f61440b96163f50bca6f2",
   "overlay_git_commit": "52a597a1a1f472ac759dd12b66678e145e30899f",
@@ -192,5 +192,5 @@
     }
   },
   "smoke_test": false,
-  "notes": ""
+  "notes": "Run id was h0_cand.k128_s2048.seed13 during the candidate-capacity sweep; this IS the H0 configuration (k_start=k_end=128, k_span=2048) that was then adopted into configs/tars/h0_span.yaml. Renamed for reporting."
 }

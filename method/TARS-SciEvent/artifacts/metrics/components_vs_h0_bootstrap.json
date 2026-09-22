@@ -1,0 +1,134 @@
+{
+  "h1_tuple.seed13": {
+    "f1_a": 32.78301886792453,
+    "f1_b": 30.82114735658043,
+    "observed_delta_f1": -1.9618715113440988,
+    "ci95_low": -6.70540849266823,
+    "ci95_high": 2.708513909828362,
+    "bootstrap_p_value": 0.4072,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h1_tuple.seed42": {
+    "f1_a": 29.716981132075475,
+    "f1_b": 32.30452674897119,
+    "observed_delta_f1": 2.5875456168957145,
+    "ci95_low": -1.8214754013803414,
+    "ci95_high": 7.21268160298107,
+    "bootstrap_p_value": 0.26,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h1_tuple.seed101": {
+    "f1_a": 32.94930875576037,
+    "f1_b": 35.24904214559387,
+    "observed_delta_f1": 2.299733389833497,
+    "ci95_low": -2.6830429014713064,
+    "ci95_high": 7.021940601591494,
+    "bootstrap_p_value": 0.3602,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h2_proto_on_h0.seed13": {
+    "f1_a": 32.78301886792453,
+    "f1_b": 31.046119235095617,
+    "observed_delta_f1": -1.7368996328289144,
+    "ci95_low": -6.790527825728715,
+    "ci95_high": 3.283613277470114,
+    "bootstrap_p_value": 0.5042,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h2_proto_on_h0.seed42": {
+    "f1_a": 29.716981132075475,
+    "f1_b": 35.89108910891089,
+    "observed_delta_f1": 6.174107976835414,
+    "ci95_low": 1.814445729183298,
+    "ci95_high": 11.05513755515653,
+    "bootstrap_p_value": 0.0088,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h2_proto_on_h0.seed101": {
+    "f1_a": 32.94930875576037,
+    "f1_b": 33.58778625954198,
+    "observed_delta_f1": 0.6384775037816093,
+    "ci95_low": -2.874934700573832,
+    "ci95_high": 4.0927514667906,
+    "bootstrap_p_value": 0.7166,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k5.seed13": {
+    "f1_a": 32.78301886792453,
+    "f1_b": 33.61702127659574,
+    "observed_delta_f1": 0.8340024086712139,
+    "ci95_low": -3.618817463446565,
+    "ci95_high": 5.4724747186755565,
+    "bootstrap_p_value": 0.717,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k5.seed42": {
+    "f1_a": 29.716981132075475,
+    "f1_b": 33.14794215795328,
+    "observed_delta_f1": 3.4309610258778047,
+    "ci95_low": -0.5110456015393646,
+    "ci95_high": 7.434669730010687,
+    "bootstrap_p_value": 0.088,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k5.seed101": {
+    "f1_a": 32.94930875576037,
+    "f1_b": 33.97508493771234,
+    "observed_delta_f1": 1.0257761819519706,
+    "ci95_low": -2.631048509089688,
+    "ci95_high": 4.578964381288377,
+    "bootstrap_p_value": 0.5828,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k50.seed13": {
+    "f1_a": 32.78301886792453,
+    "f1_b": 31.590656284760847,
+    "observed_delta_f1": -1.1923625831636808,
+    "ci95_low": -5.648385667700046,
+    "ci95_high": 3.2544665321181756,
+    "bootstrap_p_value": 0.6148,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k50.seed42": {
+    "f1_a": 29.716981132075475,
+    "f1_b": 35.27980535279806,
+    "observed_delta_f1": 5.562824220722584,
+    "ci95_low": 1.2089324733687887,
+    "ci95_high": 10.008110265520342,
+    "bootstrap_p_value": 0.0144,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "h3b_k50.seed101": {
+    "f1_a": 32.94930875576037,
+    "f1_b": 33.255269320843084,
+    "observed_delta_f1": 0.3059605650827135,
+    "ci95_low": -4.118891502399956,
+    "ci95_high": 4.592238756287592,
+    "bootstrap_p_value": 0.8908,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  }
+}
