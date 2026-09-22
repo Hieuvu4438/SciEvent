@@ -1,0 +1,177 @@
+{
+  "split": "dev",
+  "checkpoint": "artifacts/runs/h0_span.seed13/best.pt",
+  "max_span_width": 40,
+  "gate": 0.98,
+  "target": 0.99,
+  "sweep": [
+    {
+      "k_start": 64,
+      "k_end": 64,
+      "k_span": 512,
+      "recall": 0.9758551307847082,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 64,
+      "k_end": 64,
+      "k_span": 1024,
+      "recall": 0.9879275653923542,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 64,
+      "k_end": 64,
+      "k_span": 2048,
+      "recall": 0.9879275653923542,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 64,
+      "k_end": 64,
+      "k_span": 4096,
+      "recall": 0.9879275653923542,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 96,
+      "k_end": 96,
+      "k_span": 512,
+      "recall": 0.9778672032193159,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 96,
+      "k_end": 96,
+      "k_span": 1024,
+      "recall": 0.9919517102615694,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 96,
+      "k_end": 96,
+      "k_span": 2048,
+      "recall": 0.9919517102615694,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 96,
+      "k_end": 96,
+      "k_span": 4096,
+      "recall": 0.9919517102615694,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 128,
+      "k_end": 128,
+      "k_span": 512,
+      "recall": 0.9758551307847082,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 128,
+      "k_end": 128,
+      "k_span": 1024,
+      "recall": 0.9899396378269618,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 128,
+      "k_end": 128,
+      "k_span": 2048,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 128,
+      "k_end": 128,
+      "k_span": 4096,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 192,
+      "k_end": 192,
+      "k_span": 512,
+      "recall": 0.9758551307847082,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 192,
+      "k_end": 192,
+      "k_span": 1024,
+      "recall": 0.9899396378269618,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 192,
+      "k_end": 192,
+      "k_span": 2048,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 192,
+      "k_end": 192,
+      "k_span": 4096,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 256,
+      "k_end": 256,
+      "k_span": 512,
+      "recall": 0.9758551307847082,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 256,
+      "k_end": 256,
+      "k_span": 1024,
+      "recall": 0.9899396378269618,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 256,
+      "k_end": 256,
+      "k_span": 2048,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    },
+    {
+      "k_start": 256,
+      "k_end": 256,
+      "k_span": 4096,
+      "recall": 0.993963782696177,
+      "width_cap_ceiling": 0.993963782696177,
+      "num_gold": 497
+    }
+  ],
+  "recommended": {
+    "k_start": 96,
+    "k_end": 96,
+    "k_span": 1024,
+    "recall": 0.9919517102615694,
+    "width_cap_ceiling": 0.993963782696177,
+    "num_gold": 497
+  }
+}

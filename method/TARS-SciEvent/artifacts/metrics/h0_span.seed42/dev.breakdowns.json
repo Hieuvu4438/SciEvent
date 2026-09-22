@@ -1,0 +1,256 @@
+{
+  "domain": {
+    "ACL": {
+      "precision": 62.903225806451616,
+      "recall": 50.649350649350644,
+      "f1": 56.11510791366906,
+      "matched": 39,
+      "pred_total": 62,
+      "gold_total": 77
+    },
+    "bioinfo": {
+      "precision": 37.878787878787875,
+      "recall": 30.48780487804878,
+      "f1": 33.78378378378378,
+      "matched": 25,
+      "pred_total": 66,
+      "gold_total": 82
+    },
+    "cscw": {
+      "precision": 43.93939393939394,
+      "recall": 42.64705882352941,
+      "f1": 43.28358208955223,
+      "matched": 29,
+      "pred_total": 66,
+      "gold_total": 68
+    },
+    "dh": {
+      "precision": 16.049382716049383,
+      "recall": 9.558823529411764,
+      "f1": 11.981566820276496,
+      "matched": 13,
+      "pred_total": 81,
+      "gold_total": 136
+    },
+    "jmir": {
+      "precision": 27.358490566037734,
+      "recall": 21.641791044776117,
+      "f1": 24.166666666666664,
+      "matched": 29,
+      "pred_total": 106,
+      "gold_total": 134
+    }
+  },
+  "event_type": {
+    "Background/Introduction": {
+      "precision": 32.22222222222222,
+      "recall": 18.70967741935484,
+      "f1": 23.6734693877551,
+      "matched": 29,
+      "pred_total": 90,
+      "gold_total": 155
+    },
+    "Conclusions/Implications": {
+      "precision": 20.588235294117645,
+      "recall": 9.45945945945946,
+      "f1": 12.962962962962965,
+      "matched": 7,
+      "pred_total": 34,
+      "gold_total": 74
+    },
+    "Methods/Approach": {
+      "precision": 35.50295857988166,
+      "recall": 37.267080745341616,
+      "f1": 36.36363636363636,
+      "matched": 60,
+      "pred_total": 169,
+      "gold_total": 161
+    },
+    "Results/Findings": {
+      "precision": 44.31818181818182,
+      "recall": 36.44859813084112,
+      "f1": 40.0,
+      "matched": 39,
+      "pred_total": 88,
+      "gold_total": 107
+    }
+  },
+  "role": {
+    "Analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "matched": 0,
+      "pred_total": 9,
+      "gold_total": 13
+    },
+    "Challenge": {
+      "precision": 31.70731707317073,
+      "recall": 28.888888888888886,
+      "f1": 30.23255813953488,
+      "matched": 13,
+      "pred_total": 41,
+      "gold_total": 45
+    },
+    "Context": {
+      "precision": 28.205128205128204,
+      "recall": 13.836477987421384,
+      "f1": 18.56540084388186,
+      "matched": 22,
+      "pred_total": 78,
+      "gold_total": 159
+    },
+    "Ethical": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "matched": 0,
+      "pred_total": 0,
+      "gold_total": 1
+    },
+    "Implications": {
+      "precision": 22.727272727272727,
+      "recall": 16.129032258064516,
+      "f1": 18.867924528301884,
+      "matched": 5,
+      "pred_total": 22,
+      "gold_total": 31
+    },
+    "Method": {
+      "precision": 39.285714285714285,
+      "recall": 41.1214953271028,
+      "f1": 40.182648401826484,
+      "matched": 44,
+      "pred_total": 112,
+      "gold_total": 107
+    },
+    "Purpose": {
+      "precision": 36.36363636363637,
+      "recall": 32.0,
+      "f1": 34.04255319148936,
+      "matched": 8,
+      "pred_total": 22,
+      "gold_total": 25
+    },
+    "Results": {
+      "precision": 44.329896907216494,
+      "recall": 37.06896551724138,
+      "f1": 40.375586854460096,
+      "matched": 43,
+      "pred_total": 97,
+      "gold_total": 116
+    }
+  },
+  "arg_width": {
+    "<=16": {
+      "precision": 37.74834437086093,
+      "recall": 33.52941176470588,
+      "f1": 35.51401869158878,
+      "matched": 57,
+      "pred_total": 151,
+      "gold_total": 170
+    },
+    "<=32": {
+      "precision": 40.0,
+      "recall": 41.53846153846154,
+      "f1": 40.754716981132084,
+      "matched": 54,
+      "pred_total": 135,
+      "gold_total": 130
+    },
+    "<=4": {
+      "precision": 17.5,
+      "recall": 8.536585365853659,
+      "f1": 11.475409836065573,
+      "matched": 7,
+      "pred_total": 40,
+      "gold_total": 82
+    },
+    "<=8": {
+      "precision": 32.55813953488372,
+      "recall": 13.725490196078432,
+      "f1": 19.31034482758621,
+      "matched": 14,
+      "pred_total": 43,
+      "gold_total": 102
+    },
+    ">32": {
+      "precision": 25.0,
+      "recall": 23.076923076923077,
+      "f1": 24.000000000000004,
+      "matched": 3,
+      "pred_total": 12,
+      "gold_total": 13
+    }
+  },
+  "window_length": {
+    "<=128": {
+      "precision": 33.33333333333333,
+      "recall": 26.25,
+      "f1": 29.37062937062937,
+      "matched": 63,
+      "pred_total": 189,
+      "gold_total": 240
+    },
+    "<=32": {
+      "precision": 75.0,
+      "recall": 26.47058823529412,
+      "f1": 39.1304347826087,
+      "matched": 9,
+      "pred_total": 12,
+      "gold_total": 34
+    },
+    "<=64": {
+      "precision": 44.230769230769226,
+      "recall": 28.57142857142857,
+      "f1": 34.71698113207547,
+      "matched": 46,
+      "pred_total": 104,
+      "gold_total": 161
+    },
+    ">128": {
+      "precision": 22.36842105263158,
+      "recall": 27.419354838709676,
+      "f1": 24.63768115942029,
+      "matched": 17,
+      "pred_total": 76,
+      "gold_total": 62
+    }
+  },
+  "action_distance": {
+    "same_sentence": {
+      "precision": 35.43307086614173,
+      "recall": 27.16297786720322,
+      "f1": 30.751708428246015,
+      "matched": 135,
+      "pred_total": 381,
+      "gold_total": 497
+    }
+  },
+  "cross_sentence": {
+    "single": {
+      "precision": 35.43307086614173,
+      "recall": 27.16297786720322,
+      "f1": 30.751708428246015,
+      "matched": 135,
+      "pred_total": 381,
+      "gold_total": 497
+    }
+  },
+  "same_role_multiplicity": {
+    "1": {
+      "recall": 35.0,
+      "matched": 56,
+      "gold_total": 160,
+      "metric": "recall_only",
+      "note": "bucket is defined by gold; precision/F1 are undefined"
+    },
+    ">1": {
+      "recall": 23.44213649851632,
+      "matched": 79,
+      "gold_total": 337,
+      "metric": "recall_only",
+      "note": "bucket is defined by gold; precision/F1 are undefined"
+    }
+  }
+}

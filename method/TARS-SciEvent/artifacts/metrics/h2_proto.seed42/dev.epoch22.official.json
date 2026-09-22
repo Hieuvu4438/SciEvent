@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "rougeL_overall_p": 76.45,
+    "rougeL_overall_r": 81.69,
+    "rougeL_overall_f1": 74.96,
+    "arg_i_exact_p": 38.27,
+    "arg_i_exact_r": 18.71,
+    "arg_i_exact_f1": 25.14,
+    "arg_c_exact_p": 32.51,
+    "arg_c_exact_r": 15.9,
+    "arg_c_exact_f1": 21.35,
+    "arg_i_overlap_p": 68.31,
+    "arg_i_overlap_r": 33.4,
+    "arg_i_overlap_f1": 44.86,
+    "arg_c_overlap_p": 54.73,
+    "arg_c_overlap_r": 26.76,
+    "arg_c_overlap_f1": 35.95,
+    "arg_i_scirex_p": 58.85,
+    "arg_i_scirex_r": 28.77,
+    "arg_i_scirex_f1": 38.65,
+    "arg_c_scirex_p": 48.56,
+    "arg_c_scirex_r": 23.74,
+    "arg_c_scirex_f1": 31.89,
+    "arg_i_iou_p": 53.5,
+    "arg_i_iou_r": 26.16,
+    "arg_i_iou_f1": 35.14,
+    "arg_c_iou_p": 44.44,
+    "arg_c_iou_r": 21.73,
+    "arg_c_iou_f1": 29.19
+  },
+  "contract": {
+    "num_pred_windows": 158,
+    "num_gold_windows": 158,
+    "id_sets_equal": true
+  },
+  "evaluator_path": "/home/haipd/SciEvent/method/TARS-SciEvent/vendor/SciEvent/baselines/ONEIE/EM_overlap_eval.py",
+  "evaluator_sha256": "173880ac7257cf515a6208d131a167a099cac3eaaaf80e1aac1f3b582c8d420e",
+  "gold_path": "/home/haipd/SciEvent/method/TARS-SciEvent/data/official/dev.oneie.json",
+  "gold_sha256": "129491f2f2953a228c2c8816538105a532bc096fb24de2a7238ba5a044e76a12",
+  "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto.seed42/dev.epoch22.oneie.json",
+  "pred_sha256": "fa97ca130365e23601a103919f1b0f9946fe1755aee42bc13e820ba35be1cdb1",
+  "raw_stdout_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/metrics/h2_proto.seed42/dev.epoch22.official.txt"
+}

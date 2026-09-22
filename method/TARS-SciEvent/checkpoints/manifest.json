@@ -1,0 +1,16 @@
+{
+  "modernbert-large": {
+    "repo_id": "answerdotai/ModernBERT-large",
+    "revision_sha": "45bb4654a4d5aaff24dd11d4781fa46d39bf8c13",
+    "local_dir": "modernbert-large",
+    "tokenizer_only": false,
+    "download_timestamp_utc": "2026-09-22T05:06:39Z"
+  },
+  "preprocess-bart-tokenizer": {
+    "repo_id": "facebook/bart-large",
+    "revision_sha": "cb48c1365bd826bd521f650dc2e0940aee54720c",
+    "local_dir": "preprocess-bart-tokenizer",
+    "tokenizer_only": true,
+    "download_timestamp_utc": "2026-09-22T05:06:48Z"
+  }
+}

@@ -1,0 +1,11 @@
+# TARS-H4 = best prior + lightweight rhetorical sentence hierarchy.
+#
+# Run ONLY if the H1-H3 diagnostics motivate it. If there is no stable gain,
+# leave it out of the final method even though it appears in the original
+# research hypothesis. Do not make a long-context claim from this component.
+inherit: h3_adaptive_proto.yaml
+experiment: h4_rhetoric
+
+model:
+  use_discourse: true
+  discourse_layers: 2

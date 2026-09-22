@@ -1,0 +1,1342 @@
+[
+  {
+    "epoch": 1,
+    "seconds": 48.19739055633545,
+    "loss": {
+      "total": 44.957456830143926,
+      "event_type": 1.3881858985871076,
+      "action": 4.95484652435407,
+      "components": 12.96097720041871,
+      "arguments": 12.313039914425463,
+      "boundary": 1.211274006962776,
+      "prototype": 8.434602046012879
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 3.3333333333333333e-06,
+    "lr_head": 9.999999999999999e-05,
+    "dev": {
+      "epoch": 1,
+      "official": {
+        "rougeL_overall_p": 62.48,
+        "rougeL_overall_r": 75.46,
+        "rougeL_overall_f1": 63.17,
+        "arg_i_exact_p": 0.0,
+        "arg_i_exact_r": 0.0,
+        "arg_i_exact_f1": 0.0,
+        "arg_c_exact_p": 0.0,
+        "arg_c_exact_r": 0.0,
+        "arg_c_exact_f1": 0.0,
+        "arg_i_overlap_p": 0.0,
+        "arg_i_overlap_r": 0.0,
+        "arg_i_overlap_f1": 0.0,
+        "arg_c_overlap_p": 0.0,
+        "arg_c_overlap_r": 0.0,
+        "arg_c_overlap_f1": 0.0,
+        "arg_i_scirex_p": 0.0,
+        "arg_i_scirex_r": 0.0,
+        "arg_i_scirex_f1": 0.0,
+        "arg_c_scirex_p": 0.0,
+        "arg_c_scirex_r": 0.0,
+        "arg_c_scirex_f1": 0.0,
+        "arg_i_iou_p": 0.0,
+        "arg_i_iou_r": 0.0,
+        "arg_i_iou_f1": 0.0,
+        "arg_c_iou_p": 0.0,
+        "arg_c_iou_r": 0.0,
+        "arg_c_iou_f1": 0.0
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 0,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch1.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.9899396378269618,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch1.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 0.0,
+    "peak_train_allocated_gib": 7.917419910430908
+  },
+  {
+    "epoch": 2,
+    "seconds": 60.989694595336914,
+    "loss": {
+      "total": 19.31856837272644,
+      "event_type": 0.8020262340083718,
+      "action": 1.2701991064357572,
+      "components": 5.260625468567014,
+      "arguments": 5.692642346397042,
+      "boundary": 0.6803886883892118,
+      "prototype": 5.204769188165665
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 6.666666666666667e-06,
+    "lr_head": 0.00019999999999999998,
+    "dev": {
+      "epoch": 2,
+      "official": {
+        "rougeL_overall_p": 72.25,
+        "rougeL_overall_r": 83.98,
+        "rougeL_overall_f1": 73.11,
+        "arg_i_exact_p": 0.0,
+        "arg_i_exact_r": 0.0,
+        "arg_i_exact_f1": 0.0,
+        "arg_c_exact_p": 0.0,
+        "arg_c_exact_r": 0.0,
+        "arg_c_exact_f1": 0.0,
+        "arg_i_overlap_p": 0.0,
+        "arg_i_overlap_r": 0.0,
+        "arg_i_overlap_f1": 0.0,
+        "arg_c_overlap_p": 0.0,
+        "arg_c_overlap_r": 0.0,
+        "arg_c_overlap_f1": 0.0,
+        "arg_i_scirex_p": 0.0,
+        "arg_i_scirex_r": 0.0,
+        "arg_i_scirex_f1": 0.0,
+        "arg_c_scirex_p": 0.0,
+        "arg_c_scirex_r": 0.0,
+        "arg_c_scirex_f1": 0.0,
+        "arg_i_iou_p": 0.0,
+        "arg_i_iou_r": 0.0,
+        "arg_i_iou_f1": 0.0,
+        "arg_c_iou_p": 0.0,
+        "arg_c_iou_r": 0.0,
+        "arg_c_iou_f1": 0.0
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 0,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch2.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch2.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 0.0,
+    "peak_train_allocated_gib": 7.917419910430908
+  },
+  {
+    "epoch": 3,
+    "seconds": 60.7790310382843,
+    "loss": {
+      "total": 15.412572042644024,
+      "event_type": 0.6498599137179554,
+      "action": 0.8593412171843738,
+      "components": 3.7672021434642375,
+      "arguments": 4.902628419920802,
+      "boundary": 0.517725418927148,
+      "prototype": 1.4409852098673581
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 1e-05,
+    "lr_head": 0.0003,
+    "dev": {
+      "epoch": 3,
+      "official": {
+        "rougeL_overall_p": 75.99,
+        "rougeL_overall_r": 83.01,
+        "rougeL_overall_f1": 75.64,
+        "arg_i_exact_p": 0.0,
+        "arg_i_exact_r": 0.0,
+        "arg_i_exact_f1": 0.0,
+        "arg_c_exact_p": 0.0,
+        "arg_c_exact_r": 0.0,
+        "arg_c_exact_f1": 0.0,
+        "arg_i_overlap_p": 0.0,
+        "arg_i_overlap_r": 0.0,
+        "arg_i_overlap_f1": 0.0,
+        "arg_c_overlap_p": 0.0,
+        "arg_c_overlap_r": 0.0,
+        "arg_c_overlap_f1": 0.0,
+        "arg_i_scirex_p": 0.0,
+        "arg_i_scirex_r": 0.0,
+        "arg_i_scirex_f1": 0.0,
+        "arg_c_scirex_p": 0.0,
+        "arg_c_scirex_r": 0.0,
+        "arg_c_scirex_f1": 0.0,
+        "arg_i_iou_p": 0.0,
+        "arg_i_iou_r": 0.0,
+        "arg_i_iou_f1": 0.0,
+        "arg_c_iou_p": 0.0,
+        "arg_c_iou_r": 0.0,
+        "arg_c_iou_f1": 0.0
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 0,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch3.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch3.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 0.0,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 4,
+    "seconds": 60.41770648956299,
+    "loss": {
+      "total": 12.541689273715019,
+      "event_type": 0.6867277389392257,
+      "action": 0.4184323921600708,
+      "components": 2.6934096327982844,
+      "arguments": 4.254270466137678,
+      "boundary": 0.44885799516923724,
+      "prototype": 0.20299112778156997
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 9.629629629629632e-06,
+    "lr_head": 0.0002888888888888889,
+    "dev": {
+      "epoch": 4,
+      "official": {
+        "rougeL_overall_p": 77.39,
+        "rougeL_overall_r": 85.19,
+        "rougeL_overall_f1": 77.61,
+        "arg_i_exact_p": 53.85,
+        "arg_i_exact_r": 1.41,
+        "arg_i_exact_f1": 2.75,
+        "arg_c_exact_p": 30.77,
+        "arg_c_exact_r": 0.8,
+        "arg_c_exact_f1": 1.57,
+        "arg_i_overlap_p": 61.54,
+        "arg_i_overlap_r": 1.61,
+        "arg_i_overlap_f1": 3.14,
+        "arg_c_overlap_p": 38.46,
+        "arg_c_overlap_r": 1.01,
+        "arg_c_overlap_f1": 1.96,
+        "arg_i_scirex_p": 61.54,
+        "arg_i_scirex_r": 1.61,
+        "arg_i_scirex_f1": 3.14,
+        "arg_c_scirex_p": 38.46,
+        "arg_c_scirex_r": 1.01,
+        "arg_c_scirex_f1": 1.96,
+        "arg_i_iou_p": 61.54,
+        "arg_i_iou_r": 1.61,
+        "arg_i_iou_f1": 3.14,
+        "arg_c_iou_p": 38.46,
+        "arg_c_iou_r": 1.01,
+        "arg_c_iou_f1": 1.96
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 13,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch4.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch4.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 1.96,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 5,
+    "seconds": 59.247841596603394,
+    "loss": {
+      "total": 9.793147467821836,
+      "event_type": 0.481219048431376,
+      "action": 0.26367137015645314,
+      "components": 1.7011795165948569,
+      "arguments": 3.574345600744709,
+      "boundary": 0.3898026950657368,
+      "prototype": 0.06970008057542146
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 9.25925925925926e-06,
+    "lr_head": 0.0002777777777777778,
+    "dev": {
+      "epoch": 5,
+      "official": {
+        "rougeL_overall_p": 75.84,
+        "rougeL_overall_r": 84.58,
+        "rougeL_overall_f1": 75.95,
+        "arg_i_exact_p": 32.35,
+        "arg_i_exact_r": 6.64,
+        "arg_i_exact_f1": 11.02,
+        "arg_c_exact_p": 27.45,
+        "arg_c_exact_r": 5.63,
+        "arg_c_exact_f1": 9.35,
+        "arg_i_overlap_p": 54.9,
+        "arg_i_overlap_r": 11.27,
+        "arg_i_overlap_f1": 18.7,
+        "arg_c_overlap_p": 39.22,
+        "arg_c_overlap_r": 8.05,
+        "arg_c_overlap_f1": 13.36,
+        "arg_i_scirex_p": 50.0,
+        "arg_i_scirex_r": 10.26,
+        "arg_i_scirex_f1": 17.03,
+        "arg_c_scirex_p": 36.27,
+        "arg_c_scirex_r": 7.44,
+        "arg_c_scirex_f1": 12.35,
+        "arg_i_iou_p": 42.16,
+        "arg_i_iou_r": 8.65,
+        "arg_i_iou_f1": 14.36,
+        "arg_c_iou_p": 33.33,
+        "arg_c_iou_r": 6.84,
+        "arg_c_iou_f1": 11.35
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 102,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch5.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch5.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 11.35,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 6,
+    "seconds": 58.56081938743591,
+    "loss": {
+      "total": 7.893837901949882,
+      "event_type": 0.43074725739425046,
+      "action": 0.09930552572935838,
+      "components": 1.1367828347953037,
+      "arguments": 3.030414655082859,
+      "boundary": 0.3284218080574647,
+      "prototype": 0.03924188031814992
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 8.888888888888888e-06,
+    "lr_head": 0.0002666666666666666,
+    "dev": {
+      "epoch": 6,
+      "official": {
+        "rougeL_overall_p": 77.08,
+        "rougeL_overall_r": 84.44,
+        "rougeL_overall_f1": 76.54,
+        "arg_i_exact_p": 25.0,
+        "arg_i_exact_r": 1.81,
+        "arg_i_exact_f1": 3.38,
+        "arg_c_exact_p": 25.0,
+        "arg_c_exact_r": 1.81,
+        "arg_c_exact_f1": 3.38,
+        "arg_i_overlap_p": 55.56,
+        "arg_i_overlap_r": 4.02,
+        "arg_i_overlap_f1": 7.5,
+        "arg_c_overlap_p": 30.56,
+        "arg_c_overlap_r": 2.21,
+        "arg_c_overlap_f1": 4.13,
+        "arg_i_scirex_p": 47.22,
+        "arg_i_scirex_r": 3.42,
+        "arg_i_scirex_f1": 6.38,
+        "arg_c_scirex_p": 27.78,
+        "arg_c_scirex_r": 2.01,
+        "arg_c_scirex_f1": 3.75,
+        "arg_i_iou_p": 33.33,
+        "arg_i_iou_r": 2.41,
+        "arg_i_iou_f1": 4.5,
+        "arg_c_iou_p": 25.0,
+        "arg_c_iou_r": 1.81,
+        "arg_c_iou_f1": 3.38
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 36,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch6.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch6.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 3.38,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 7,
+    "seconds": 57.69344878196716,
+    "loss": {
+      "total": 6.2526683256030084,
+      "event_type": 0.33524774200923274,
+      "action": 0.042400794071416566,
+      "components": 0.8424573561176658,
+      "arguments": 2.4445236835163087,
+      "boundary": 0.2824715286726132,
+      "prototype": 0.04558539104182273
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 8.518518518518519e-06,
+    "lr_head": 0.00025555555555555553,
+    "dev": {
+      "epoch": 7,
+      "official": {
+        "rougeL_overall_p": 76.01,
+        "rougeL_overall_r": 82.23,
+        "rougeL_overall_f1": 74.92,
+        "arg_i_exact_p": 18.55,
+        "arg_i_exact_r": 19.11,
+        "arg_i_exact_f1": 18.83,
+        "arg_c_exact_p": 15.04,
+        "arg_c_exact_r": 15.49,
+        "arg_c_exact_f1": 15.26,
+        "arg_i_overlap_p": 39.45,
+        "arg_i_overlap_r": 40.64,
+        "arg_i_overlap_f1": 40.04,
+        "arg_c_overlap_p": 27.54,
+        "arg_c_overlap_r": 28.37,
+        "arg_c_overlap_f1": 27.95,
+        "arg_i_scirex_p": 33.2,
+        "arg_i_scirex_r": 34.21,
+        "arg_i_scirex_f1": 33.7,
+        "arg_c_scirex_p": 24.02,
+        "arg_c_scirex_r": 24.75,
+        "arg_c_scirex_f1": 24.38,
+        "arg_i_iou_p": 29.3,
+        "arg_i_iou_r": 30.18,
+        "arg_i_iou_f1": 29.73,
+        "arg_c_iou_p": 21.88,
+        "arg_c_iou_r": 22.54,
+        "arg_c_iou_f1": 22.2
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 512,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch7.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch7.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 22.2,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 8,
+    "seconds": 57.91034412384033,
+    "loss": {
+      "total": 5.099467511102557,
+      "event_type": 0.2864069018571172,
+      "action": 0.022059726140623147,
+      "components": 0.7215241688885726,
+      "arguments": 1.9729977230075746,
+      "boundary": 0.2429943249328062,
+      "prototype": 0.039681894984096286
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 8.14814814814815e-06,
+    "lr_head": 0.00024444444444444443,
+    "dev": {
+      "epoch": 8,
+      "official": {
+        "rougeL_overall_p": 76.16,
+        "rougeL_overall_r": 84.57,
+        "rougeL_overall_f1": 75.85,
+        "arg_i_exact_p": 28.49,
+        "arg_i_exact_r": 20.52,
+        "arg_i_exact_f1": 23.86,
+        "arg_c_exact_p": 22.35,
+        "arg_c_exact_r": 16.1,
+        "arg_c_exact_f1": 18.71,
+        "arg_i_overlap_p": 48.6,
+        "arg_i_overlap_r": 35.01,
+        "arg_i_overlap_f1": 40.7,
+        "arg_c_overlap_p": 38.55,
+        "arg_c_overlap_r": 27.77,
+        "arg_c_overlap_f1": 32.28,
+        "arg_i_scirex_p": 41.06,
+        "arg_i_scirex_r": 29.58,
+        "arg_i_scirex_f1": 34.39,
+        "arg_c_scirex_p": 32.96,
+        "arg_c_scirex_r": 23.74,
+        "arg_c_scirex_f1": 27.6,
+        "arg_i_iou_p": 38.55,
+        "arg_i_iou_r": 27.77,
+        "arg_i_iou_f1": 32.28,
+        "arg_c_iou_p": 31.28,
+        "arg_c_iou_r": 22.54,
+        "arg_c_iou_f1": 26.2
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 358,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch8.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch8.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 26.2,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 9,
+    "seconds": 57.39112091064453,
+    "loss": {
+      "total": 4.146064962074161,
+      "event_type": 0.23893048715399345,
+      "action": 0.02200154729279518,
+      "components": 0.6141361063346267,
+      "arguments": 1.5825667513418011,
+      "boundary": 0.20899365252116694,
+      "prototype": 0.027330081607215107
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 7.77777777777778e-06,
+    "lr_head": 0.0002333333333333333,
+    "dev": {
+      "epoch": 9,
+      "official": {
+        "rougeL_overall_p": 75.68,
+        "rougeL_overall_r": 82.36,
+        "rougeL_overall_f1": 74.5,
+        "arg_i_exact_p": 27.85,
+        "arg_i_exact_r": 22.13,
+        "arg_i_exact_f1": 24.66,
+        "arg_c_exact_p": 23.54,
+        "arg_c_exact_r": 18.71,
+        "arg_c_exact_f1": 20.85,
+        "arg_i_overlap_p": 48.86,
+        "arg_i_overlap_r": 38.83,
+        "arg_i_overlap_f1": 43.27,
+        "arg_c_overlap_p": 38.73,
+        "arg_c_overlap_r": 30.78,
+        "arg_c_overlap_f1": 34.3,
+        "arg_i_scirex_p": 43.04,
+        "arg_i_scirex_r": 34.21,
+        "arg_i_scirex_f1": 38.12,
+        "arg_c_scirex_p": 34.18,
+        "arg_c_scirex_r": 27.16,
+        "arg_c_scirex_f1": 30.27,
+        "arg_i_iou_p": 39.49,
+        "arg_i_iou_r": 31.39,
+        "arg_i_iou_f1": 34.98,
+        "arg_c_iou_p": 32.66,
+        "arg_c_iou_r": 25.96,
+        "arg_c_iou_f1": 28.92
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 395,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch9.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch9.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 28.92,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 10,
+    "seconds": 58.58846664428711,
+    "loss": {
+      "total": 3.3344687634613366,
+      "event_type": 0.20359853729605676,
+      "action": 0.019151515014983123,
+      "components": 0.4849789075378794,
+      "arguments": 1.2659425301331795,
+      "boundary": 0.18684978534001856,
+      "prototype": 0.028597004641778768
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 7.4074074074074075e-06,
+    "lr_head": 0.00022222222222222218,
+    "dev": {
+      "epoch": 10,
+      "official": {
+        "rougeL_overall_p": 79.67,
+        "rougeL_overall_r": 84.23,
+        "rougeL_overall_f1": 78.41,
+        "arg_i_exact_p": 30.61,
+        "arg_i_exact_r": 20.32,
+        "arg_i_exact_f1": 24.43,
+        "arg_c_exact_p": 26.06,
+        "arg_c_exact_r": 17.3,
+        "arg_c_exact_f1": 20.8,
+        "arg_i_overlap_p": 57.88,
+        "arg_i_overlap_r": 38.43,
+        "arg_i_overlap_f1": 46.19,
+        "arg_c_overlap_p": 47.88,
+        "arg_c_overlap_r": 31.79,
+        "arg_c_overlap_f1": 38.21,
+        "arg_i_scirex_p": 49.09,
+        "arg_i_scirex_r": 32.6,
+        "arg_i_scirex_f1": 39.18,
+        "arg_c_scirex_p": 40.3,
+        "arg_c_scirex_r": 26.76,
+        "arg_c_scirex_f1": 32.16,
+        "arg_i_iou_p": 45.76,
+        "arg_i_iou_r": 30.38,
+        "arg_i_iou_f1": 36.52,
+        "arg_c_iou_p": 38.18,
+        "arg_c_iou_r": 25.35,
+        "arg_c_iou_f1": 30.47
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 330,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch10.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch10.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.47,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 11,
+    "seconds": 61.01383948326111,
+    "loss": {
+      "total": 2.940524887572974,
+      "event_type": 0.15654821088392054,
+      "action": 0.02169116121854957,
+      "components": 0.4705937775230268,
+      "arguments": 1.1028093129309127,
+      "boundary": 0.1692615266132634,
+      "prototype": 0.02884712624363601
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 7.0370370370370375e-06,
+    "lr_head": 0.0002111111111111111,
+    "dev": {
+      "epoch": 11,
+      "official": {
+        "rougeL_overall_p": 77.61,
+        "rougeL_overall_r": 84.23,
+        "rougeL_overall_f1": 76.95,
+        "arg_i_exact_p": 29.23,
+        "arg_i_exact_r": 20.52,
+        "arg_i_exact_f1": 24.11,
+        "arg_c_exact_p": 25.5,
+        "arg_c_exact_r": 17.91,
+        "arg_c_exact_f1": 21.04,
+        "arg_i_overlap_p": 57.59,
+        "arg_i_overlap_r": 40.44,
+        "arg_i_overlap_f1": 47.52,
+        "arg_c_overlap_p": 44.13,
+        "arg_c_overlap_r": 30.99,
+        "arg_c_overlap_f1": 36.41,
+        "arg_i_scirex_p": 51.86,
+        "arg_i_scirex_r": 36.42,
+        "arg_i_scirex_f1": 42.79,
+        "arg_c_scirex_p": 40.11,
+        "arg_c_scirex_r": 28.17,
+        "arg_c_scirex_f1": 33.1,
+        "arg_i_iou_p": 43.84,
+        "arg_i_iou_r": 30.78,
+        "arg_i_iou_f1": 36.17,
+        "arg_c_iou_p": 35.53,
+        "arg_c_iou_r": 24.95,
+        "arg_c_iou_f1": 29.31
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 161,
+        "num_predicted_semantic_arguments": 349,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch11.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch11.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 29.31,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 12,
+    "seconds": 63.17314672470093,
+    "loss": {
+      "total": 2.3052687200019135,
+      "event_type": 0.11135052901918244,
+      "action": 0.009810597996452768,
+      "components": 0.39158355324034344,
+      "arguments": 0.8580229576851707,
+      "boundary": 0.15062197414808906,
+      "prototype": 0.023342750314623118
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 6.666666666666668e-06,
+    "lr_head": 0.0002,
+    "dev": {
+      "epoch": 12,
+      "official": {
+        "rougeL_overall_p": 75.63,
+        "rougeL_overall_r": 83.5,
+        "rougeL_overall_f1": 75.34,
+        "arg_i_exact_p": 30.71,
+        "arg_i_exact_r": 24.35,
+        "arg_i_exact_f1": 27.16,
+        "arg_c_exact_p": 25.89,
+        "arg_c_exact_r": 20.52,
+        "arg_c_exact_f1": 22.9,
+        "arg_i_overlap_p": 53.05,
+        "arg_i_overlap_r": 42.05,
+        "arg_i_overlap_f1": 46.91,
+        "arg_c_overlap_p": 42.64,
+        "arg_c_overlap_r": 33.8,
+        "arg_c_overlap_f1": 37.71,
+        "arg_i_scirex_p": 47.97,
+        "arg_i_scirex_r": 38.03,
+        "arg_i_scirex_f1": 42.42,
+        "arg_c_scirex_p": 38.83,
+        "arg_c_scirex_r": 30.78,
+        "arg_c_scirex_f1": 34.34,
+        "arg_i_iou_p": 42.64,
+        "arg_i_iou_r": 33.8,
+        "arg_i_iou_f1": 37.71,
+        "arg_c_iou_p": 34.77,
+        "arg_c_iou_r": 27.57,
+        "arg_c_iou_f1": 30.75
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 394,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch12.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch12.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.75,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 13,
+    "seconds": 59.994160175323486,
+    "loss": {
+      "total": 2.0457747768377885,
+      "event_type": 0.09514138628137517,
+      "action": 0.005996025992080633,
+      "components": 0.30840295309899374,
+      "arguments": 0.783924178572488,
+      "boundary": 0.13344741454930045,
+      "prototype": 0.033246917207725345
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 6.296296296296297e-06,
+    "lr_head": 0.00018888888888888888,
+    "dev": {
+      "epoch": 13,
+      "official": {
+        "rougeL_overall_p": 77.6,
+        "rougeL_overall_r": 82.29,
+        "rougeL_overall_f1": 75.65,
+        "arg_i_exact_p": 33.14,
+        "arg_i_exact_r": 22.94,
+        "arg_i_exact_f1": 27.11,
+        "arg_c_exact_p": 28.78,
+        "arg_c_exact_r": 19.92,
+        "arg_c_exact_f1": 23.54,
+        "arg_i_overlap_p": 57.27,
+        "arg_i_overlap_r": 39.64,
+        "arg_i_overlap_f1": 46.85,
+        "arg_c_overlap_p": 44.48,
+        "arg_c_overlap_r": 30.78,
+        "arg_c_overlap_f1": 36.39,
+        "arg_i_scirex_p": 50.58,
+        "arg_i_scirex_r": 35.01,
+        "arg_i_scirex_f1": 41.38,
+        "arg_c_scirex_p": 39.53,
+        "arg_c_scirex_r": 27.36,
+        "arg_c_scirex_f1": 32.34,
+        "arg_i_iou_p": 45.06,
+        "arg_i_iou_r": 31.19,
+        "arg_i_iou_f1": 36.86,
+        "arg_c_iou_p": 36.63,
+        "arg_c_iou_r": 25.35,
+        "arg_c_iou_f1": 29.96
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 344,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch13.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.9919517102615694,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch13.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 29.96,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 14,
+    "seconds": 54.20259213447571,
+    "loss": {
+      "total": 1.7308271428570152,
+      "event_type": 0.0795279385865797,
+      "action": 0.0037855764505127067,
+      "components": 0.2804784058746009,
+      "arguments": 0.6526219088402285,
+      "boundary": 0.12131177869741805,
+      "prototype": 0.022710180922877042
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 5.925925925925926e-06,
+    "lr_head": 0.00017777777777777776,
+    "dev": {
+      "epoch": 14,
+      "official": {
+        "rougeL_overall_p": 80.36,
+        "rougeL_overall_r": 81.79,
+        "rougeL_overall_f1": 77.2,
+        "arg_i_exact_p": 29.09,
+        "arg_i_exact_r": 25.75,
+        "arg_i_exact_f1": 27.32,
+        "arg_c_exact_p": 23.86,
+        "arg_c_exact_r": 21.13,
+        "arg_c_exact_f1": 22.41,
+        "arg_i_overlap_p": 52.95,
+        "arg_i_overlap_r": 46.88,
+        "arg_i_overlap_f1": 49.73,
+        "arg_c_overlap_p": 40.68,
+        "arg_c_overlap_r": 36.02,
+        "arg_c_overlap_f1": 38.21,
+        "arg_i_scirex_p": 45.45,
+        "arg_i_scirex_r": 40.24,
+        "arg_i_scirex_f1": 42.69,
+        "arg_c_scirex_p": 36.36,
+        "arg_c_scirex_r": 32.19,
+        "arg_c_scirex_f1": 34.15,
+        "arg_i_iou_p": 41.14,
+        "arg_i_iou_r": 36.42,
+        "arg_i_iou_f1": 38.63,
+        "arg_c_iou_p": 32.95,
+        "arg_c_iou_r": 29.18,
+        "arg_c_iou_f1": 30.95
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 440,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch14.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch14.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.95,
+    "peak_train_allocated_gib": 7.920094966888428
+  },
+  {
+    "epoch": 15,
+    "seconds": 59.99706673622131,
+    "loss": {
+      "total": 1.4461162833147683,
+      "event_type": 0.046445162875352254,
+      "action": 0.009787655635266974,
+      "components": 0.24841881002394076,
+      "arguments": 0.5421852302570187,
+      "boundary": 0.1118043443915667,
+      "prototype": 0.023840497131459415
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 5.555555555555557e-06,
+    "lr_head": 0.00016666666666666666,
+    "dev": {
+      "epoch": 15,
+      "official": {
+        "rougeL_overall_p": 78.22,
+        "rougeL_overall_r": 83.67,
+        "rougeL_overall_f1": 76.98,
+        "arg_i_exact_p": 29.59,
+        "arg_i_exact_r": 23.34,
+        "arg_i_exact_f1": 26.1,
+        "arg_c_exact_p": 24.23,
+        "arg_c_exact_r": 19.11,
+        "arg_c_exact_f1": 21.37,
+        "arg_i_overlap_p": 55.36,
+        "arg_i_overlap_r": 43.66,
+        "arg_i_overlap_f1": 48.82,
+        "arg_c_overlap_p": 43.37,
+        "arg_c_overlap_r": 34.21,
+        "arg_c_overlap_f1": 38.25,
+        "arg_i_scirex_p": 48.47,
+        "arg_i_scirex_r": 38.23,
+        "arg_i_scirex_f1": 42.74,
+        "arg_c_scirex_p": 38.52,
+        "arg_c_scirex_r": 30.38,
+        "arg_c_scirex_f1": 33.97,
+        "arg_i_iou_p": 44.39,
+        "arg_i_iou_r": 35.01,
+        "arg_i_iou_f1": 39.15,
+        "arg_c_iou_p": 35.2,
+        "arg_c_iou_r": 27.77,
+        "arg_c_iou_f1": 31.05
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 392,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch15.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.9919517102615694,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch15.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 31.05,
+    "peak_train_allocated_gib": 7.920196533203125
+  },
+  {
+    "epoch": 16,
+    "seconds": 60.737464427948,
+    "loss": {
+      "total": 1.2944963155081495,
+      "event_type": 0.04171890358757082,
+      "action": 0.0030513586216794454,
+      "components": 0.1972031065979536,
+      "arguments": 0.4997638707871374,
+      "boundary": 0.10403408634010702,
+      "prototype": 0.01956318994052708
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 5.185185185185187e-06,
+    "lr_head": 0.00015555555555555556,
+    "dev": {
+      "epoch": 16,
+      "official": {
+        "rougeL_overall_p": 79.23,
+        "rougeL_overall_r": 84.89,
+        "rougeL_overall_f1": 78.11,
+        "arg_i_exact_p": 35.71,
+        "arg_i_exact_r": 22.13,
+        "arg_i_exact_f1": 27.33,
+        "arg_c_exact_p": 29.55,
+        "arg_c_exact_r": 18.31,
+        "arg_c_exact_f1": 22.61,
+        "arg_i_overlap_p": 61.36,
+        "arg_i_overlap_r": 38.03,
+        "arg_i_overlap_f1": 46.96,
+        "arg_c_overlap_p": 49.68,
+        "arg_c_overlap_r": 30.78,
+        "arg_c_overlap_f1": 38.01,
+        "arg_i_scirex_p": 53.57,
+        "arg_i_scirex_r": 33.2,
+        "arg_i_scirex_f1": 40.99,
+        "arg_c_scirex_p": 42.86,
+        "arg_c_scirex_r": 26.56,
+        "arg_c_scirex_f1": 32.8,
+        "arg_i_iou_p": 48.38,
+        "arg_i_iou_r": 29.98,
+        "arg_i_iou_f1": 37.02,
+        "arg_c_iou_p": 39.29,
+        "arg_c_iou_r": 24.35,
+        "arg_c_iou_f1": 30.06
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 308,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch16.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch16.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.06,
+    "peak_train_allocated_gib": 7.920196533203125
+  },
+  {
+    "epoch": 17,
+    "seconds": 62.252864837646484,
+    "loss": {
+      "total": 1.1389992314740085,
+      "event_type": 0.04060076773030232,
+      "action": 0.004503830646814333,
+      "components": 0.17163959687532043,
+      "arguments": 0.4364553744162549,
+      "boundary": 0.09698230126232374,
+      "prototype": 0.01706271475413814
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 4.814814814814816e-06,
+    "lr_head": 0.00014444444444444444,
+    "dev": {
+      "epoch": 17,
+      "official": {
+        "rougeL_overall_p": 79.15,
+        "rougeL_overall_r": 85.21,
+        "rougeL_overall_f1": 78.48,
+        "arg_i_exact_p": 30.06,
+        "arg_i_exact_r": 19.72,
+        "arg_i_exact_f1": 23.82,
+        "arg_c_exact_p": 25.46,
+        "arg_c_exact_r": 16.7,
+        "arg_c_exact_f1": 20.17,
+        "arg_i_overlap_p": 57.98,
+        "arg_i_overlap_r": 38.03,
+        "arg_i_overlap_f1": 45.93,
+        "arg_c_overlap_p": 46.63,
+        "arg_c_overlap_r": 30.58,
+        "arg_c_overlap_f1": 36.94,
+        "arg_i_scirex_p": 51.23,
+        "arg_i_scirex_r": 33.6,
+        "arg_i_scirex_f1": 40.58,
+        "arg_c_scirex_p": 41.41,
+        "arg_c_scirex_r": 27.16,
+        "arg_c_scirex_f1": 32.81,
+        "arg_i_iou_p": 44.79,
+        "arg_i_iou_r": 29.38,
+        "arg_i_iou_f1": 35.48,
+        "arg_c_iou_p": 36.2,
+        "arg_c_iou_r": 23.74,
+        "arg_c_iou_f1": 28.68
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 326,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch17.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.9919517102615694,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch17.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 28.68,
+    "peak_train_allocated_gib": 7.920196533203125
+  },
+  {
+    "epoch": 18,
+    "seconds": 62.616034269332886,
+    "loss": {
+      "total": 0.9291707327240146,
+      "event_type": 0.03475855859823014,
+      "action": 0.014072365188070157,
+      "components": 0.1113057532482344,
+      "arguments": 0.36103221821904297,
+      "boundary": 0.09206134997075424,
+      "prototype": 0.01877887829905376
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 4.444444444444444e-06,
+    "lr_head": 0.0001333333333333333,
+    "dev": {
+      "epoch": 18,
+      "official": {
+        "rougeL_overall_p": 78.97,
+        "rougeL_overall_r": 85.14,
+        "rougeL_overall_f1": 78.54,
+        "arg_i_exact_p": 36.96,
+        "arg_i_exact_r": 23.94,
+        "arg_i_exact_f1": 29.06,
+        "arg_c_exact_p": 29.5,
+        "arg_c_exact_r": 19.11,
+        "arg_c_exact_f1": 23.2,
+        "arg_i_overlap_p": 62.42,
+        "arg_i_overlap_r": 40.44,
+        "arg_i_overlap_f1": 49.08,
+        "arg_c_overlap_p": 49.38,
+        "arg_c_overlap_r": 31.99,
+        "arg_c_overlap_f1": 38.83,
+        "arg_i_scirex_p": 55.9,
+        "arg_i_scirex_r": 36.22,
+        "arg_i_scirex_f1": 43.96,
+        "arg_c_scirex_p": 43.17,
+        "arg_c_scirex_r": 27.97,
+        "arg_c_scirex_f1": 33.94,
+        "arg_i_iou_p": 49.07,
+        "arg_i_iou_r": 31.79,
+        "arg_i_iou_f1": 38.58,
+        "arg_c_iou_p": 38.51,
+        "arg_c_iou_r": 24.95,
+        "arg_c_iou_f1": 30.28
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 322,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch18.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.9919517102615694,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch18.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.28,
+    "peak_train_allocated_gib": 7.920196533203125
+  },
+  {
+    "epoch": 19,
+    "seconds": 45.04443168640137,
+    "loss": {
+      "total": 0.8669418689562007,
+      "event_type": 0.02984418793269015,
+      "action": 0.0027768491841970665,
+      "components": 0.14425504442178863,
+      "arguments": 0.3237571904206561,
+      "boundary": 0.08372422116517556,
+      "prototype": 0.01378596921567805
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 4.074074074074075e-06,
+    "lr_head": 0.00012222222222222221,
+    "dev": {
+      "epoch": 19,
+      "official": {
+        "rougeL_overall_p": 79.52,
+        "rougeL_overall_r": 83.52,
+        "rougeL_overall_f1": 77.51,
+        "arg_i_exact_p": 39.02,
+        "arg_i_exact_r": 20.72,
+        "arg_i_exact_f1": 27.07,
+        "arg_c_exact_p": 32.58,
+        "arg_c_exact_r": 17.3,
+        "arg_c_exact_f1": 22.6,
+        "arg_i_overlap_p": 68.56,
+        "arg_i_overlap_r": 36.42,
+        "arg_i_overlap_f1": 47.57,
+        "arg_c_overlap_p": 55.3,
+        "arg_c_overlap_r": 29.38,
+        "arg_c_overlap_f1": 38.37,
+        "arg_i_scirex_p": 60.23,
+        "arg_i_scirex_r": 31.99,
+        "arg_i_scirex_f1": 41.79,
+        "arg_c_scirex_p": 48.11,
+        "arg_c_scirex_r": 25.55,
+        "arg_c_scirex_f1": 33.38,
+        "arg_i_iou_p": 53.03,
+        "arg_i_iou_r": 28.17,
+        "arg_i_iou_f1": 36.79,
+        "arg_c_iou_p": 43.94,
+        "arg_c_iou_r": 23.34,
+        "arg_c_iou_f1": 30.49
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 264,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch19.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch19.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 30.49,
+    "peak_train_allocated_gib": 7.920196533203125
+  },
+  {
+    "epoch": 20,
+    "seconds": 35.46464490890503,
+    "loss": {
+      "total": 0.72526093935885,
+      "event_type": 0.030061147272192557,
+      "action": 0.0030959837375484855,
+      "components": 0.09577106614544846,
+      "arguments": 0.27839170035840655,
+      "boundary": 0.07690299402747769,
+      "prototype": 0.02195696920971386
+    },
+    "supervision": {
+      "gold_args": 3897.0,
+      "dropped_capacity": 0.0,
+      "missing_candidate": 0.0,
+      "dropped_component": 0.0
+    },
+    "lr_backbone": 3.7037037037037037e-06,
+    "lr_head": 0.00011111111111111109,
+    "dev": {
+      "epoch": 20,
+      "official": {
+        "rougeL_overall_p": 79.1,
+        "rougeL_overall_r": 85.73,
+        "rougeL_overall_f1": 78.95,
+        "arg_i_exact_p": 30.38,
+        "arg_i_exact_r": 19.32,
+        "arg_i_exact_f1": 23.62,
+        "arg_c_exact_p": 25.32,
+        "arg_c_exact_r": 16.1,
+        "arg_c_exact_f1": 19.68,
+        "arg_i_overlap_p": 52.53,
+        "arg_i_overlap_r": 33.4,
+        "arg_i_overlap_f1": 40.84,
+        "arg_c_overlap_p": 42.72,
+        "arg_c_overlap_r": 27.16,
+        "arg_c_overlap_f1": 33.21,
+        "arg_i_scirex_p": 46.52,
+        "arg_i_scirex_r": 29.58,
+        "arg_i_scirex_f1": 36.16,
+        "arg_c_scirex_p": 37.03,
+        "arg_c_scirex_r": 23.54,
+        "arg_c_scirex_f1": 28.78,
+        "arg_i_iou_p": 40.82,
+        "arg_i_iou_r": 25.96,
+        "arg_i_iou_f1": 31.73,
+        "arg_c_iou_p": 32.59,
+        "arg_c_iou_r": 20.72,
+        "arg_c_iou_f1": 25.34
+      },
+      "export": {
+        "num_windows": 158,
+        "num_predicted_events": 158,
+        "num_predicted_semantic_arguments": 316,
+        "path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch20.oneie.json"
+      },
+      "diagnostics": {
+        "candidate_recall": 0.993963782696177,
+        "num_gold_semantic_spans": 497
+      },
+      "pred_path": "/home/haipd/SciEvent/method/TARS-SciEvent/artifacts/predictions/h2_proto_on_h0.seed13/dev.epoch20.oneie.json",
+      "peak_infer_allocated_gib": 5.6739654541015625
+    },
+    "dev_headline": 25.34,
+    "peak_train_allocated_gib": 7.920196533203125
+  }
+]

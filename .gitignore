@@ -1,0 +1,19 @@
+# Local Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded model weights and tokenizer files; keep their provenance manifest
+method/TARS-SciEvent/checkpoints/*
+!method/TARS-SciEvent/checkpoints/manifest.json
+
+# Generated experiment files too large or local to store in Git
+*.pt
+*.pth
+*.ckpt
+method/TARS-SciEvent/artifacts/predictions/
+*.official.txt
+method/TARS-SciEvent/artifacts/logs/
+method/TARS-SciEvent/artifacts/audits/*.log
+method/TARS-SciEvent/artifacts/audits/pip_freeze*.txt
+method/TARS-SciEvent/private_data/

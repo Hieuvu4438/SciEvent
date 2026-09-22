@@ -1,0 +1,34 @@
+# configs/tars/role_definitions.yaml
+# Source: SciEvent Annotation Guidelines / Codebook (EMNLP 2025)
+# Definitions for the 9 semantic roles and 3 trigger components.
+
+schema_version: "1.0"
+source: "SciEvent EMNLP 2025 annotation guidelines"
+
+trigger_components:
+  Agent:
+    definition: "The entity, author, system, model, or participant that performs or initiates the scientific action or event."
+  PrimaryObject:
+    definition: "The primary entity, concept, dataset, model, phenomenon, or artifact directly acted upon or investigated by the event."
+  SecondaryObject:
+    definition: "The secondary, recipient, target, baseline, comparator, or instrument entity involved in the event."
+
+semantic_roles:
+  Context:
+    definition: "Background information, problem motivation, domain setting, or existing scientific context in which the research takes place."
+  Purpose:
+    definition: "The objective, research goal, intended outcome, or purpose driving the scientific action or study."
+  Method:
+    definition: "The technical technique, methodology, experimental procedure, mathematical formulation, or algorithm employed."
+  Results:
+    definition: "The concrete empirical findings, observations, quantitative metrics, or qualitative outcomes produced by the experiment or analysis."
+  Analysis:
+    definition: "Analytical insights, interpretations, explanations, statistical evaluations, or synthesis of why certain results occurred."
+  Challenge:
+    definition: "Difficulties, limitations, scientific obstacles, open problems, or challenges encountered or addressed in the investigation."
+  Ethical:
+    definition: "Ethical considerations, societal impacts, privacy concerns, fairness, biases, safety, or human subject implications."
+  Implications:
+    definition: "Broader scientific impacts, theoretical contributions, practical applications, downstream consequences, or future directions."
+  Contradictions:
+    definition: "Contradictory findings, conflicting evidence, unexpected paradoxes, trade-offs, or results that challenge prior literature or assumptions."

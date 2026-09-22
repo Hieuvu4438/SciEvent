@@ -1,0 +1,103 @@
+# TARS-H0 -- matched internal control (Stage B of the method-first funnel).
+#
+#   ModernBERT-large
+#   + window-level event-set decoder
+#   + Action / Agent / PrimaryObject / SecondaryObject heads
+#   + candidate semantic spans
+#   + simple learned role representations
+#   NO tuple anchoring, NO definition prototypes, NO rhetorical hierarchy
+#
+# This is the internal baseline we own predictions for, so every later
+# component can be tested with paired statistics.
+
+experiment: h0_span
+
+data:
+  train: data/official/train.json
+  dev: data/official/dev.json
+  test: data/official/test.json
+  train_oneie: data/official/train.oneie.json
+  dev_oneie: data/official/dev.oneie.json
+  test_oneie: data/official/test.oneie.json
+  role_definitions: configs/tars/role_definitions.yaml
+
+evaluation:
+  official_evaluator: vendor/SciEvent/baselines/ONEIE/EM_overlap_eval.py
+  headline_metric: arg_c_iou_f1
+
+# Every capacity below is derived from TRAIN statistics only. Leave a value
+# null to let scripts/registry resolve it and record the rule in the manifest.
+capacities:
+  k_event: null                 # max_train_events_per_window + 1
+  k_event_cap: 8
+  max_span_width: null          # min(64, ceil(train p99.5 semantic arg width))
+  max_span_width_floor: 16
+  role_slot_mode: max           # train max same-role args per event, + 1
+  role_slot_cap: 32
+  component_slots: null         # train max multiplicity per trigger component
+
+model:
+  backbone_path: checkpoints/modernbert-large
+  backbone_repo_id: answerdotai/ModernBERT-large
+  decoder_layers: 2
+  decoder_heads: 8
+  dropout: 0.1
+  gradient_checkpointing: true
+
+  max_action_width: 12          # train max trigger width is 8
+  # Dev sweep (artifacts/audits/candidate_recall_sweep.json): k_span=512 capped
+  # dev candidate recall at 97.6%, below the STOP_MODEL_02 gate of 98%. At
+  # k_start=k_end=128, k_span=2048 the proposal ranking becomes lossless --
+  # recall 99.40% equals the max_span_width ceiling -- so any remaining miss is
+  # the width cap alone, never the ranking.
+  k_start: 128
+  k_end: 128
+  k_span: 2048
+  candidate_dim: 512
+  arg_proj_size: 512
+  use_action_distance: true
+
+  # --- component switches: all OFF for H0 ---
+  use_tuple_query: false        # H1
+  prototype_mode: learned       # H2 = fixed, H3 = adaptive
+  use_discourse: false          # H4
+
+  null_bias: 0.0                # single global calibration, dev-tuned only
+  force_min_events: 1           # every TRAIN window has >=1 event
+
+loss:
+  lambda_type: 1.0
+  lambda_action: 1.0
+  lambda_tuple: 1.0
+  lambda_arg: 2.0
+  lambda_bnd: 0.5
+  lambda_proto: 0.0             # no prototype anchor in H0
+  null_weight: 0.1              # DETR-style: ~75 NULL slots vs ~3 real args
+  boundary_pos_weight: 5.0      # gold boundaries are ~5% of words
+
+event_matching_cost:
+  type: 2.0
+  action: 4.0
+  agent: 0.5
+  primary_object: 0.5
+  secondary_object: 0.25
+
+training:
+  precision: bf16
+  bf16: true
+  full_finetuning: true
+  max_length: 768               # length audit: train max is 618 subwords
+  micro_batch_size: 4
+  grad_accumulation: 4          # effective batch 16
+  eval_batch_size: 8
+  optimizer: adamw
+  backbone_lr: 1.0e-5
+  head_lr: 3.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.10
+  max_epochs: 30
+  early_stop_metric: dev/arg_c_iou_f1
+  early_stop_patience: 5
+  early_stop_min_epochs: 12     # metric is degenerately 0 during LR warmup
+  clip_grad_norm: 1.0
+  smoke_epochs: 10

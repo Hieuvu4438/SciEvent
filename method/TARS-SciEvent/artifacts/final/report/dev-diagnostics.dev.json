@@ -1,0 +1,79 @@
+{
+  "stage": "dev-diagnostics",
+  "split": "dev",
+  "headline_metric": "arg_c_iou_f1 (official evaluator, untouched upstream)",
+  "our_results": {},
+  "paper_reported_references": [
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "OneIE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 41.61,
+      "precision": 39.69,
+      "recall": 43.71,
+      "arg_i_iou_f1": 53.57,
+      "trigger_rouge_l_f1": 72.4,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "DEGREE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 21.57,
+      "precision": 48.99,
+      "recall": 13.83,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "EEQA",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 26.51,
+      "precision": 25.85,
+      "recall": 27.2,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    }
+  ],
+  "paired_bootstrap_vs_h0": {},
+  "sota_gate": {
+    "checks": {
+      "official_evaluator_used": true,
+      "test_untouched_before_freeze": null,
+      "multiple_final_seeds": false,
+      "vram_within_30gib": true,
+      "artifacts_hashed": true,
+      "external_data_disclosed": true,
+      "exceeds_prior_point_estimate": false,
+      "split_identity_byte_verified": false,
+      "literature_refreshed_to_execution_date": false
+    },
+    "our_point_estimate": null,
+    "best_paper_reported": {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "OneIE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 41.61,
+      "precision": 39.69,
+      "recall": 43.71,
+      "arg_i_iou_f1": 53.57,
+      "trigger_rouge_l_f1": 72.4,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    "absolute_margin": null,
+    "permitted_wording": "no SOTA claim is supported by the current evidence",
+    "protocol_note": "Paper-reported values are external reference points and were NOT rerun. Statistical significance is claimed only against our own matched H0/component ablations."
+  },
+  "num_run_manifests": 0
+}

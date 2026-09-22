@@ -1,0 +1,15 @@
+# TARS-H3 = H2 + frequency-adaptive prototype blending.
+#
+#   lambda_r = kappa / (kappa + n_r),  n_r = TRAIN-only frequency of role r
+#
+# Rare roles (Ethical n=1, Contradictions n=2, Analysis n=67) stay close to their
+# annotation-definition semantics; frequent roles (Context n=1053) learn freely.
+# One global kappa, tuned on dev over {5, 20, 50}. Never a per-role lambda.
+#
+# Reject if rare-role gains come with a material overall Arg-C drop.
+inherit: h2_proto.yaml
+experiment: h3_adaptive_proto
+
+model:
+  prototype_mode: adaptive
+  prototype_kappa: 20.0

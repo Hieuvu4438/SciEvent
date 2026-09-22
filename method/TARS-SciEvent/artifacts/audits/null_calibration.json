@@ -1,0 +1,109 @@
+{
+  "checkpoint": "artifacts/runs/h2_proto_on_h0.seed42/best.pt",
+  "config": "configs/tars/h2_proto_on_h0.yaml",
+  "base_null_bias": 0.0,
+  "selection_metric": "dev/arg_c_iou_f1 (official evaluator)",
+  "sweep": [
+    {
+      "offset": -3.0,
+      "effective_null_bias": -3.0,
+      "num_predicted_semantic_arguments": 568,
+      "arg_c_iou_f1": 34.18,
+      "arg_c_exact_f1": 24.6,
+      "arg_i_iou_f1": 39.81,
+      "arg_c_iou_p": 32.04,
+      "arg_c_iou_r": 36.62
+    },
+    {
+      "offset": -2.0,
+      "effective_null_bias": -2.0,
+      "num_predicted_semantic_arguments": 474,
+      "arg_c_iou_f1": 35.43,
+      "arg_c_exact_f1": 25.95,
+      "arg_i_iou_f1": 41.4,
+      "arg_c_iou_p": 36.29,
+      "arg_c_iou_r": 34.61
+    },
+    {
+      "offset": -1.5,
+      "effective_null_bias": -1.5,
+      "num_predicted_semantic_arguments": 430,
+      "arg_c_iou_f1": 35.6,
+      "arg_c_exact_f1": 26.11,
+      "arg_i_iou_f1": 40.56,
+      "arg_c_iou_p": 38.37,
+      "arg_c_iou_r": 33.2
+    },
+    {
+      "offset": -1.0,
+      "effective_null_bias": -1.0,
+      "num_predicted_semantic_arguments": 385,
+      "arg_c_iou_f1": 36.28,
+      "arg_c_exact_f1": 26.76,
+      "arg_i_iou_f1": 41.04,
+      "arg_c_iou_p": 41.56,
+      "arg_c_iou_r": 32.19
+    },
+    {
+      "offset": -0.5,
+      "effective_null_bias": -0.5,
+      "num_predicted_semantic_arguments": 354,
+      "arg_c_iou_f1": 36.19,
+      "arg_c_exact_f1": 26.79,
+      "arg_i_iou_f1": 41.6,
+      "arg_c_iou_p": 43.5,
+      "arg_c_iou_r": 30.99
+    },
+    {
+      "offset": 0.0,
+      "effective_null_bias": 0.0,
+      "num_predicted_semantic_arguments": 311,
+      "arg_c_iou_f1": 35.89,
+      "arg_c_exact_f1": 26.49,
+      "arg_i_iou_f1": 41.58,
+      "arg_c_iou_p": 46.62,
+      "arg_c_iou_r": 29.18
+    },
+    {
+      "offset": 0.5,
+      "effective_null_bias": 0.5,
+      "num_predicted_semantic_arguments": 274,
+      "arg_c_iou_f1": 34.5,
+      "arg_c_exact_f1": 25.94,
+      "arg_i_iou_f1": 39.69,
+      "arg_c_iou_p": 48.54,
+      "arg_c_iou_r": 26.76
+    },
+    {
+      "offset": 1.0,
+      "effective_null_bias": 1.0,
+      "num_predicted_semantic_arguments": 248,
+      "arg_c_iou_f1": 34.09,
+      "arg_c_exact_f1": 25.77,
+      "arg_i_iou_f1": 39.19,
+      "arg_c_iou_p": 51.21,
+      "arg_c_iou_r": 25.55
+    },
+    {
+      "offset": 2.0,
+      "effective_null_bias": 2.0,
+      "num_predicted_semantic_arguments": 185,
+      "arg_c_iou_f1": 32.55,
+      "arg_c_exact_f1": 24.93,
+      "arg_i_iou_f1": 36.07,
+      "arg_c_iou_p": 60.0,
+      "arg_c_iou_r": 22.33
+    }
+  ],
+  "best": {
+    "offset": -1.0,
+    "effective_null_bias": -1.0,
+    "num_predicted_semantic_arguments": 385,
+    "arg_c_iou_f1": 36.28,
+    "arg_c_exact_f1": 26.76,
+    "arg_i_iou_f1": 41.04,
+    "arg_c_iou_p": 41.56,
+    "arg_c_iou_r": 32.19
+  },
+  "note": "One global NULL margin, tuned on dev only. No per-role thresholds."
+}

@@ -1,0 +1,16 @@
+# TARS-H2 = H1 + fixed codebook-definition role prototypes.
+#
+# Role definitions come from configs/tars/role_definitions.yaml (SciEvent
+# annotation guidelines) and are encoded once with the frozen initial backbone.
+# A constant lambda blends the definition vector with the learned empirical
+# vector -- no frequency adaptation yet, so H3 isolates that effect.
+inherit: h1_tuple.yaml
+experiment: h2_proto
+
+model:
+  prototype_mode: fixed
+  prototype_fixed_lambda: 0.5
+  prototype_anchor_weight: 1.0
+
+loss:
+  lambda_proto: 0.05

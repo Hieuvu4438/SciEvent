@@ -1,0 +1,35 @@
+{
+  "13": {
+    "f1_a": 32.78301886792453,
+    "f1_b": 30.82114735658043,
+    "observed_delta_f1": -1.9618715113440988,
+    "ci95_low": -6.70540849266823,
+    "ci95_high": 2.708513909828362,
+    "bootstrap_p_value": 0.4072,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "42": {
+    "f1_a": 29.716981132075475,
+    "f1_b": 32.30452674897119,
+    "observed_delta_f1": 2.5875456168957145,
+    "ci95_low": -1.8214754013803414,
+    "ci95_high": 7.21268160298107,
+    "bootstrap_p_value": 0.26,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  },
+  "101": {
+    "f1_a": 32.94930875576037,
+    "f1_b": 35.24904214559387,
+    "observed_delta_f1": 2.299733389833497,
+    "ci95_low": -2.6830429014713064,
+    "ci95_high": 7.021940601591494,
+    "bootstrap_p_value": 0.3602,
+    "num_samples": 5000,
+    "num_document_blocks": 133,
+    "resampling_unit": "doc_id"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "stage": "funnel",
+  "split": "dev",
+  "headline_metric": "arg_c_iou_f1 (official evaluator, untouched upstream)",
+  "our_results": {
+    "h0_span": {
+      "experiment": "h0_span",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 31.893333333333334,
+        "std": 1.8824009491426996,
+        "median": 32.95,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 23.363333333333333,
+        "std": 1.6530678550299542,
+        "median": 24.19,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 38.48,
+        "std": 0.857496355677386,
+        "median": 38.21,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 27.886666666666667,
+        "std": 1.6066839556469514,
+        "median": 28.11,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h0_cand.k128_s2048.seed13",
+          "arg_c_iou_f1": 33.01,
+          "arg_c_exact_f1": 24.44,
+          "arg_i_iou_f1": 39.44,
+          "arg_i_exact_f1": 29.37,
+          "best_dev_epoch": 15,
+          "peak_train_allocated_gib": 7.9222540855407715,
+          "peak_infer_allocated_gib": 5.67966890335083,
+          "runtime_seconds": 689.5574467182159,
+          "checkpoint_sha256": "441c1c55a3b4e415ec32f495834f85ea362ec28a52876bee2ec664398cf2092e"
+        },
+        {
+          "seed": 42,
+          "experiment_id": "h0_span.seed42",
+          "arg_c_iou_f1": 29.72,
+          "arg_c_exact_f1": 21.46,
+          "arg_i_iou_f1": 38.21,
+          "arg_i_exact_f1": 26.18,
+          "best_dev_epoch": 20,
+          "peak_train_allocated_gib": 7.913283348083496,
+          "peak_infer_allocated_gib": 5.678951740264893,
+          "runtime_seconds": 834.5494134426117,
+          "checkpoint_sha256": "abc16a9c2adb828f3e4ff5f83600d78d1caaa7a47e125368968dac9ba7fce8e5"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h0_span.seed101",
+          "arg_c_iou_f1": 32.95,
+          "arg_c_exact_f1": 24.19,
+          "arg_i_iou_f1": 37.79,
+          "arg_i_exact_f1": 28.11,
+          "best_dev_epoch": 18,
+          "peak_train_allocated_gib": 7.9202375411987305,
+          "peak_infer_allocated_gib": 5.681952953338623,
+          "runtime_seconds": 1083.2895212173462,
+          "checkpoint_sha256": "ee58cec549c4a151c6a11763bb8d1e377edb9942d1eeae2bbcd7105d36949126"
+        }
+      ],
+      "peak_train_allocated_gib": 7.9222540855407715,
+      "peak_infer_allocated_gib": 5.681952953338623
+    },
+    "h1_tuple": {
+      "experiment": "h1_tuple",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 32.79,
+        "std": 2.255282687380897,
+        "median": 32.3,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 23.373333333333335,
+        "std": 1.2300135500608662,
+        "median": 22.84,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 38.803333333333335,
+        "std": 1.1771717518413916,
+        "median": 39.37,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 27.363333333333333,
+        "std": 0.7836027905344232,
+        "median": 27.45,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h1_tuple.seed13",
+          "arg_c_iou_f1": 30.82,
+          "arg_c_exact_f1": 22.5,
+          "arg_i_iou_f1": 39.37,
+          "arg_i_exact_f1": 27.45,
+          "best_dev_epoch": 14,
+          "peak_train_allocated_gib": 8.009722709655762,
+          "peak_infer_allocated_gib": 5.757568359375,
+          "runtime_seconds": 660.345207452774,
+          "checkpoint_sha256": "91d708cbd29cad8d9e4d1e1e67b07c2b4b14a3000da8f505f4692457dd20ca7b"
+        },
+        {
+          "seed": 42,
+          "experiment_id": "h1_tuple.seed42",
+          "arg_c_iou_f1": 32.3,
+          "arg_c_exact_f1": 22.84,
+          "arg_i_iou_f1": 37.45,
+          "arg_i_exact_f1": 26.54,
+          "best_dev_epoch": 14,
+          "peak_train_allocated_gib": 8.006974697113037,
+          "peak_infer_allocated_gib": 5.757186412811279,
+          "runtime_seconds": 692.3151800632477,
+          "checkpoint_sha256": "eaf43d08f62db704bde722184375a57925a2805835f8017fc5e637deedab7ea9"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h1_tuple.seed101",
+          "arg_c_iou_f1": 35.25,
+          "arg_c_exact_f1": 24.78,
+          "arg_i_iou_f1": 39.59,
+          "arg_i_exact_f1": 28.1,
+          "best_dev_epoch": 23,
+          "peak_train_allocated_gib": 8.01259994506836,
+          "peak_infer_allocated_gib": 5.764403343200684,
+          "runtime_seconds": 1248.4365334510803,
+          "checkpoint_sha256": "94f4eb98cf28cd167f0d7b6a1e028ed75ba2e246cf10871f40869300d70f9ab5"
+        }
+      ],
+      "peak_train_allocated_gib": 8.01259994506836,
+      "peak_infer_allocated_gib": 5.764403343200684
+    }
+  },
+  "paper_reported_references": [
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "OneIE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 41.61,
+      "precision": 39.69,
+      "recall": 43.71,
+      "arg_i_iou_f1": 53.57,
+      "trigger_rouge_l_f1": 72.4,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "DEGREE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 21.57,
+      "precision": 48.99,
+      "recall": 13.83,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "EEQA",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 26.51,
+      "precision": 25.85,
+      "recall": 27.2,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    }
+  ],
+  "paired_bootstrap_vs_h0": {},
+  "sota_gate": {
+    "checks": {
+      "official_evaluator_used": true,
+      "test_untouched_before_freeze": null,
+      "multiple_final_seeds": true,
+      "vram_within_30gib": true,
+      "artifacts_hashed": true,
+      "external_data_disclosed": true,
+      "exceeds_prior_point_estimate": false,
+      "split_identity_byte_verified": false,
+      "literature_refreshed_to_execution_date": false
+    },
+    "our_point_estimate": 31.893333333333334,
+    "best_paper_reported": {
+      "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
+      "venue": "EMNLP 2025",
+      "model_name": "OneIE",
+      "table_section": "Table 2 / Table 3",
+      "metric": "Arg-C IoU F1",
+      "reported_value": 41.61,
+      "precision": 39.69,
+      "recall": 43.71,
+      "arg_i_iou_f1": 53.57,
+      "trigger_rouge_l_f1": 72.4,
+      "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
+      "reproduced": false
+    },
+    "absolute_margin": -9.716666666666665,
+    "permitted_wording": "no SOTA claim is supported by the current evidence",
+    "protocol_note": "Paper-reported values are external reference points and were NOT rerun. Statistical significance is claimed only against our own matched H0/component ablations."
+  },
+  "num_run_manifests": 6
+}

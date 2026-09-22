@@ -1,0 +1,21 @@
+# TARS-H2b = H0 + fixed codebook-definition role prototypes, WITHOUT tuple anchoring.
+#
+# Why this config exists: the funnel in the plan stacks H2 on top of H1, but a
+# component is only kept if it is empirically supported. If H1 (tuple anchoring)
+# turns out neutral or negative, stacking prototypes on it would confound the
+# prototype result with an unsupported component. This variant tests the
+# prototype bank against the H0 base directly.
+#
+# The motivating observation from H0: the rare roles Analysis (13 dev gold) and
+# Ethical (1 dev gold) score exactly 0.0 F1 -- the failure mode annotation-
+# definition priors are meant to address.
+inherit: h0_span.yaml
+experiment: h2_proto_on_h0
+
+model:
+  prototype_mode: fixed
+  prototype_fixed_lambda: 0.5
+  prototype_anchor_weight: 1.0
+
+loss:
+  lambda_proto: 0.05

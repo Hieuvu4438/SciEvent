@@ -1,0 +1,15 @@
+# TARS-H1 = H0 + compositional Agent-Action-Object tuple anchoring.
+#
+# The only change from H0: the argument decoder is conditioned on q_tuple, built
+# from the model's own predicted start/end distributions (no gold-trigger teacher
+# forcing), instead of the raw event-slot state. Everything else is held fixed.
+#
+# Falsification: if H1 does not improve dev Arg-C IoU and/or EM consistently over
+# H0 across seeds 13 and 42, tuple anchoring is NOT supported and must be
+# reported as a negative result, not quietly dropped.
+inherit: h0_span.yaml
+experiment: h1_tuple
+
+model:
+  use_tuple_query: true
+  tuple_component_dim: 256

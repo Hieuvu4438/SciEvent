@@ -1,0 +1,43 @@
+{
+  "num_instances": {
+    "train": 1278,
+    "dev": 158,
+    "test": 163
+  },
+  "num_unique_docs": {
+    "train": 493,
+    "dev": 133,
+    "test": 147
+  },
+  "doc_overlap": {
+    "train_dev": 128,
+    "train_test": 143,
+    "dev_test": 32
+  },
+  "wnd_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "max_train_events_per_wnd": 1,
+  "event_type_counts": {
+    "Conclusions/Implications": 196,
+    "Methods/Approach": 387,
+    "Background/Introduction": 390,
+    "Results/Findings": 305
+  },
+  "role_counts": {
+    "Agent": 1276,
+    "Purpose": 254,
+    "Implications": 235,
+    "Method": 968,
+    "PrimaryObject": 1214,
+    "Context": 1053,
+    "Analysis": 67,
+    "Challenge": 406,
+    "SecondaryObject": 104,
+    "Results": 911,
+    "Contradictions": 2,
+    "Ethical": 1
+  }
+}

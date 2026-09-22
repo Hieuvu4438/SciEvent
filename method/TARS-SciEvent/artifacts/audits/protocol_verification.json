@@ -1,0 +1,145 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "check": "upstream commit pinned",
+      "ok": true,
+      "detail": "49cf9769c28f5ed8b04f61440b96163f50bca6f2",
+      "stop_code": null
+    },
+    {
+      "check": "no tracked upstream file modified",
+      "ok": true,
+      "detail": "clean (102 untracked generated/licensed paths)",
+      "stop_code": null
+    },
+    {
+      "check": "evaluator sha256 unchanged",
+      "ok": true,
+      "detail": "173880ac7257cf515a6208d131a167a099cac3eaaaf80e1aac1f3b582c8d420e (recorded 173880ac7257cf515a6208d131a167a099cac3eaaaf80e1aac1f3b582c8d420e)",
+      "stop_code": null
+    },
+    {
+      "check": "frozen data files match manifest",
+      "ok": true,
+      "detail": "7 files verified",
+      "stop_code": "STOP_DATA_03"
+    },
+    {
+      "check": "data sanity (spans/types/roles/ids)",
+      "ok": true,
+      "detail": {
+        "train": {
+          "windows": 1278,
+          "events": 1278,
+          "event_types": {
+            "Conclusions/Implications": 196,
+            "Methods/Approach": 387,
+            "Background/Introduction": 390,
+            "Results/Findings": 305
+          },
+          "semantic_roles": {
+            "Purpose": 254,
+            "Implications": 235,
+            "Method": 968,
+            "Context": 1053,
+            "Analysis": 67,
+            "Challenge": 406,
+            "Results": 911,
+            "Contradictions": 2,
+            "Ethical": 1
+          },
+          "max_events_per_window": 1
+        },
+        "dev": {
+          "windows": 158,
+          "events": 158,
+          "event_types": {
+            "Background/Introduction": 48,
+            "Methods/Approach": 48,
+            "Results/Findings": 38,
+            "Conclusions/Implications": 24
+          },
+          "semantic_roles": {
+            "Context": 159,
+            "Challenge": 45,
+            "Method": 107,
+            "Results": 116,
+            "Analysis": 13,
+            "Purpose": 25,
+            "Implications": 31,
+            "Ethical": 1
+          },
+          "max_events_per_window": 1
+        },
+        "test": {
+          "windows": 163,
+          "events": 163,
+          "event_types": {
+            "Methods/Approach": 49,
+            "Background/Introduction": 50,
+            "Results/Findings": 39,
+            "Conclusions/Implications": 25
+          },
+          "semantic_roles": {
+            "Context": 142,
+            "Purpose": 43,
+            "Results": 116,
+            "Challenge": 58,
+            "Method": 143,
+            "Implications": 19,
+            "Contradictions": 1,
+            "Analysis": 10,
+            "Ethical": 1
+          },
+          "max_events_per_window": 1
+        }
+      },
+      "stop_code": "STOP_DATA_02"
+    },
+    {
+      "check": "wnd_id -> sent_id conversion consistent",
+      "ok": true,
+      "detail": {
+        "train": "wnd_id set == sent_id set",
+        "dev": "wnd_id set == sent_id set",
+        "test": "wnd_id set == sent_id set"
+      },
+      "stop_code": null
+    },
+    {
+      "check": "raw abstract coverage 100%",
+      "ok": true,
+      "detail": "500/500 docs covered",
+      "stop_code": "STOP_DATA_01"
+    },
+    {
+      "check": "role definitions cover the official schema",
+      "ok": true,
+      "detail": {
+        "missing_roles": [],
+        "missing_components": [],
+        "sha256": "081c6f7ac48185f4d1972d5dd88563715e6fbeddfeb79454f56469f368743d12"
+      },
+      "stop_code": null
+    },
+    {
+      "check": "gold round-trip scores 100 on dev",
+      "ok": true,
+      "detail": {
+        "arg_c_exact_f1": 100.0,
+        "arg_c_iou_f1": 100.0
+      },
+      "stop_code": "STOP_METRIC_01"
+    },
+    {
+      "check": "gold round-trip scores 100 on test",
+      "ok": true,
+      "detail": {
+        "arg_c_exact_f1": 100.0,
+        "arg_c_iou_f1": 100.0
+      },
+      "stop_code": "STOP_METRIC_01"
+    }
+  ]
+}

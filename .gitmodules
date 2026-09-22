@@ -1,0 +1,5 @@
+[submodule "third_party/SciEvent"]
+	path = third_party/SciEvent
+	url = https://github.com/desdai/SciEvent.git
+	branch = EMNLP-2025
+	ignore = untracked

@@ -1,0 +1,14 @@
+# TARS-H3b = H2b + frequency-adaptive prototype blending, without tuple anchoring.
+#
+#   lambda_r = kappa / (kappa + n_r),  n_r = TRAIN-only frequency of role r
+#
+# TRAIN frequencies: Context 1053, Method 968, Results 911, Challenge 406,
+# Purpose 254, Implications 235, Analysis 67, Contradictions 2, Ethical 1.
+# With kappa=20 that puts Ethical at lambda=0.95 (almost pure definition) and
+# Context at lambda=0.02 (almost pure learned), which is the intended behaviour.
+inherit: h2_proto_on_h0.yaml
+experiment: h3_adaptive_on_h0
+
+model:
+  prototype_mode: adaptive
+  prototype_kappa: 20.0
