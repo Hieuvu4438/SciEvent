@@ -3,38 +3,38 @@
   "split": "dev",
   "headline_metric": "arg_c_iou_f1 (official evaluator, untouched upstream)",
   "our_results": {
-    "h0_cand.k128_s2048": {
-      "experiment": "h0_cand.k128_s2048",
+    "h0_span": {
+      "experiment": "h0_span",
       "reproduced": true,
       "source": "our run",
       "arg_c_iou_f1": {
-        "mean": 33.01,
-        "std": 0.0,
-        "median": 33.01,
-        "n": 1
+        "mean": 31.893333333333334,
+        "std": 1.8824009491426996,
+        "median": 32.95,
+        "n": 3
       },
       "arg_c_exact_f1": {
-        "mean": 24.44,
-        "std": 0.0,
-        "median": 24.44,
-        "n": 1
+        "mean": 23.363333333333333,
+        "std": 1.6530678550299542,
+        "median": 24.19,
+        "n": 3
       },
       "arg_i_iou_f1": {
-        "mean": 39.44,
-        "std": 0.0,
-        "median": 39.44,
-        "n": 1
+        "mean": 38.48,
+        "std": 0.857496355677386,
+        "median": 38.21,
+        "n": 3
       },
       "arg_i_exact_f1": {
-        "mean": 29.37,
-        "std": 0.0,
-        "median": 29.37,
-        "n": 1
+        "mean": 27.886666666666667,
+        "std": 1.6066839556469514,
+        "median": 28.11,
+        "n": 3
       },
       "seeds": [
         {
           "seed": 13,
-          "experiment_id": "h0_cand.k128_s2048.seed13",
+          "experiment_id": "h0_span.seed13",
           "arg_c_iou_f1": 33.01,
           "arg_c_exact_f1": 24.44,
           "arg_i_iou_f1": 39.44,
@@ -44,40 +44,7 @@
           "peak_infer_allocated_gib": 5.67966890335083,
           "runtime_seconds": 689.5574467182159,
           "checkpoint_sha256": "441c1c55a3b4e415ec32f495834f85ea362ec28a52876bee2ec664398cf2092e"
-        }
-      ],
-      "peak_train_allocated_gib": 7.9222540855407715,
-      "peak_infer_allocated_gib": 5.67966890335083
-    },
-    "h0_span": {
-      "experiment": "h0_span",
-      "reproduced": true,
-      "source": "our run",
-      "arg_c_iou_f1": {
-        "mean": 31.335,
-        "std": 2.2839549032325515,
-        "median": 31.335,
-        "n": 2
-      },
-      "arg_c_exact_f1": {
-        "mean": 22.825000000000003,
-        "std": 1.930401512639275,
-        "median": 22.825000000000003,
-        "n": 2
-      },
-      "arg_i_iou_f1": {
-        "mean": 38.0,
-        "std": 0.2969848480983512,
-        "median": 38.0,
-        "n": 2
-      },
-      "arg_i_exact_f1": {
-        "mean": 27.145,
-        "std": 1.3647160876900366,
-        "median": 27.145,
-        "n": 2
-      },
-      "seeds": [
+        },
         {
           "seed": 42,
           "experiment_id": "h0_span.seed42",
@@ -105,7 +72,7 @@
           "checkpoint_sha256": "ee58cec549c4a151c6a11763bb8d1e377edb9942d1eeae2bbcd7105d36949126"
         }
       ],
-      "peak_train_allocated_gib": 7.9202375411987305,
+      "peak_train_allocated_gib": 7.9222540855407715,
       "peak_infer_allocated_gib": 5.681952953338623
     },
     "h1_tuple": {
@@ -396,6 +363,78 @@
       "peak_train_allocated_gib": 7.921607971191406,
       "peak_infer_allocated_gib": 5.6739654541015625
     },
+    "h3_on_h1_k5": {
+      "experiment": "h3_on_h1_k5",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 33.333333333333336,
+        "std": 0.30664855018952064,
+        "median": 33.49,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 24.333333333333332,
+        "std": 1.1582026305156328,
+        "median": 24.04,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 39.73,
+        "std": 1.7224401295836116,
+        "median": 40.05,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 28.046666666666667,
+        "std": 0.9148952581215706,
+        "median": 27.59,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h3_on_h1_k5.seed13",
+          "arg_c_iou_f1": 33.53,
+          "arg_c_exact_f1": 25.61,
+          "arg_i_iou_f1": 40.05,
+          "arg_i_exact_f1": 29.1,
+          "best_dev_epoch": 22,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1482.9337351322174,
+          "checkpoint_sha256": "d6ab74f84b40a59fca32879cc12f84e01b242b8b91a78e9231aa8b80bdd4d02a"
+        },
+        {
+          "seed": 42,
+          "experiment_id": "h3_on_h1_k5.seed42",
+          "arg_c_iou_f1": 33.49,
+          "arg_c_exact_f1": 23.35,
+          "arg_i_iou_f1": 41.27,
+          "arg_i_exact_f1": 27.59,
+          "best_dev_epoch": 15,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1233.6096334457397,
+          "checkpoint_sha256": "0aebdb111a883936fc8645a5fc0ee40cb1c16ff86e0d9b3420aff0aafed213ee"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h3_on_h1_k5.seed101",
+          "arg_c_iou_f1": 32.98,
+          "arg_c_exact_f1": 24.04,
+          "arg_i_iou_f1": 37.87,
+          "arg_i_exact_f1": 27.45,
+          "best_dev_epoch": 11,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1052.755470752716,
+          "checkpoint_sha256": "091261125e7ec58860802d013246e2bff9c5fd83124357e875d8dbb6db394692"
+        }
+      ],
+      "peak_train_allocated_gib": 8.00148630142212,
+      "peak_infer_allocated_gib": 5.7493977546691895
+    },
     "h3b_k5": {
       "experiment": "h3b_k5",
       "reproduced": true,
@@ -594,7 +633,7 @@
       "split_identity_byte_verified": false,
       "literature_refreshed_to_execution_date": false
     },
-    "our_point_estimate": 31.335,
+    "our_point_estimate": 31.893333333333334,
     "best_paper_reported": {
       "paper_title": "SciEvent: A Benchmark for Scientific Event Extraction",
       "venue": "EMNLP 2025",
@@ -609,9 +648,9 @@
       "protocol_description": "Supervised tuning baseline reported in official SciEvent paper",
       "reproduced": false
     },
-    "absolute_margin": -10.274999999999999,
+    "absolute_margin": -9.716666666666665,
     "permitted_wording": "no SOTA claim is supported by the current evidence",
     "protocol_note": "Paper-reported values are external reference points and were NOT rerun. Statistical significance is claimed only against our own matched H0/component ablations."
   },
-  "num_run_manifests": 21
+  "num_run_manifests": 24
 }

@@ -1,0 +1,8 @@
+torch>=2.4
+transformers>=4.44
+tokenizers>=0.19
+sentencepiece
+accelerate
+numpy
+scikit-learn
+rouge-score

@@ -1,0 +1,18 @@
+{
+  "config": "configs/tars/h3_adaptive_on_h0.yaml",
+  "micro_batch_size": 4,
+  "max_length": 768,
+  "longest_window_words": 260,
+  "peak_train_allocated_gib": 7.930400371551514,
+  "peak_train_reserved_gib": 8.751953125,
+  "peak_infer_allocated_gib": 5.622085094451904,
+  "peak_infer_reserved_gib": 6.0390625,
+  "nvidia_smi_peak_mib": 9378,
+  "nvidia_smi_peak_gib": 9.158203125,
+  "train_seconds": 2.0864062309265137,
+  "infer_seconds": 0.3316788673400879,
+  "hard_limit_gib": 30.0,
+  "target_gib": 28.0,
+  "within_hard_limit": true,
+  "within_target": true
+}

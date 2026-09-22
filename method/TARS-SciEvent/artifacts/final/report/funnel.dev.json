@@ -363,6 +363,78 @@
       "peak_train_allocated_gib": 7.921607971191406,
       "peak_infer_allocated_gib": 5.6739654541015625
     },
+    "h3_on_h1_k5": {
+      "experiment": "h3_on_h1_k5",
+      "reproduced": true,
+      "source": "our run",
+      "arg_c_iou_f1": {
+        "mean": 33.333333333333336,
+        "std": 0.30664855018952064,
+        "median": 33.49,
+        "n": 3
+      },
+      "arg_c_exact_f1": {
+        "mean": 24.333333333333332,
+        "std": 1.1582026305156328,
+        "median": 24.04,
+        "n": 3
+      },
+      "arg_i_iou_f1": {
+        "mean": 39.73,
+        "std": 1.7224401295836116,
+        "median": 40.05,
+        "n": 3
+      },
+      "arg_i_exact_f1": {
+        "mean": 28.046666666666667,
+        "std": 0.9148952581215706,
+        "median": 27.59,
+        "n": 3
+      },
+      "seeds": [
+        {
+          "seed": 13,
+          "experiment_id": "h3_on_h1_k5.seed13",
+          "arg_c_iou_f1": 33.53,
+          "arg_c_exact_f1": 25.61,
+          "arg_i_iou_f1": 40.05,
+          "arg_i_exact_f1": 29.1,
+          "best_dev_epoch": 22,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1482.9337351322174,
+          "checkpoint_sha256": "d6ab74f84b40a59fca32879cc12f84e01b242b8b91a78e9231aa8b80bdd4d02a"
+        },
+        {
+          "seed": 42,
+          "experiment_id": "h3_on_h1_k5.seed42",
+          "arg_c_iou_f1": 33.49,
+          "arg_c_exact_f1": 23.35,
+          "arg_i_iou_f1": 41.27,
+          "arg_i_exact_f1": 27.59,
+          "best_dev_epoch": 15,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1233.6096334457397,
+          "checkpoint_sha256": "0aebdb111a883936fc8645a5fc0ee40cb1c16ff86e0d9b3420aff0aafed213ee"
+        },
+        {
+          "seed": 101,
+          "experiment_id": "h3_on_h1_k5.seed101",
+          "arg_c_iou_f1": 32.98,
+          "arg_c_exact_f1": 24.04,
+          "arg_i_iou_f1": 37.87,
+          "arg_i_exact_f1": 27.45,
+          "best_dev_epoch": 11,
+          "peak_train_allocated_gib": 8.00148630142212,
+          "peak_infer_allocated_gib": 5.7493977546691895,
+          "runtime_seconds": 1052.755470752716,
+          "checkpoint_sha256": "091261125e7ec58860802d013246e2bff9c5fd83124357e875d8dbb6db394692"
+        }
+      ],
+      "peak_train_allocated_gib": 8.00148630142212,
+      "peak_infer_allocated_gib": 5.7493977546691895
+    },
     "h3b_k5": {
       "experiment": "h3b_k5",
       "reproduced": true,
@@ -580,5 +652,5 @@
     "permitted_wording": "no SOTA claim is supported by the current evidence",
     "protocol_note": "Paper-reported values are external reference points and were NOT rerun. Statistical significance is claimed only against our own matched H0/component ablations."
   },
-  "num_run_manifests": 21
+  "num_run_manifests": 24
 }

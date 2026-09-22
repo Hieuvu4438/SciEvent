@@ -11,4 +11,12 @@ experiment: h3_adaptive_on_h0
 
 model:
   prototype_mode: adaptive
-  prototype_kappa: 20.0
+  # kappa tuned on dev over the plan's grid {5, 20, 50}, 3 seeds each
+  # (artifacts/final/report/funnel.dev.json):
+  #   kappa=5  -> 33.58 +/- 0.42   improves over H0 in 3/3 seeds
+  #   kappa=20 -> 31.83 +/- 1.12
+  #   kappa=50 -> 33.38 +/- 1.85
+  # kappa=5 wins on both mean and stability; it keeps only the genuinely rare
+  # roles near their definition vector (Ethical lambda=0.83, Contradictions 0.71,
+  # Analysis 0.07) while leaving frequent roles essentially free.
+  prototype_kappa: 5.0
