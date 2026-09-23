@@ -292,7 +292,7 @@ Bootstrap ghép cặp theo cửa sổ test, 5,000 lần lấy mẫu lại.
 
 ## 6. File
 
-Đường dẫn dưới đây là vị trí trong kho SciEvent (bản lưu trữ). Bản phát hành chính thức nằm ở `github.com/Hieuvu4438/CARVE`, với tên file tương ứng:
+Đường dẫn dưới đây là vị trí trong kho SciEvent (bản lưu trữ). Bản phát hành chính thức nằm ở `github.com/Hieuvu4438/CLAVE`, với tên file tương ứng:
 - `configs/proposer.json` (cấu hình CARVE-simple);
 - `scripts/proposer_baseline.py` (đóng băng + test CARVE-simple);
 - `assets/proposer_rule.json` và `assets/decoding_rule.json` (hai luật đóng băng);

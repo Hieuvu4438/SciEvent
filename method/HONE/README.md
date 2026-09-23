@@ -4,7 +4,7 @@
 argument extraction for the SciEvent benchmark (Dong et al., EMNLP 2025).
 
 HONE is the second method in this workspace. The first, **CARVE**
-(`method/SciEvent-Next`, public at `github.com/Hieuvu4438/CARVE`), is kept
+(`method/SciEvent-Next`, public at `github.com/Hieuvu4438/CLAVE`), is kept
 unchanged and is reused here as the *proposer*.
 
 ## Why
@@ -50,8 +50,8 @@ error rate (≈36 % vs 39.6 % positive).
 
 ## Status
 
-**Research complete; archived.** The released method is **CARVE-simple + HONE**
-(one proposer seed, one verifier seed), shipped in `github.com/Hieuvu4438/CARVE`.
+**Research complete; archived.** The released method is **CLAVE** = CARVE-simple + HONE
+(one proposer seed, one verifier seed), shipped in `github.com/Hieuvu4438/CLAVE`.
 Test: Arg-C IoU 52.36, Arg-I IoU 60.09, trigger ROUGE-L 77.82
 (full metrics: `CARVE_SIMPLE_REPORT.md`).
 

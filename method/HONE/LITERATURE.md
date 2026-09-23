@@ -1,7 +1,7 @@
 # LITERATURE.md — HONE
 
 HONE is the second method in this workspace. The first, CARVE (`method/SciEvent-Next`,
-public at `github.com/Hieuvu4438/CARVE`), established that SciEvent argument
+public at `github.com/Hieuvu4438/CLAVE`), established that SciEvent argument
 extraction is clause-level span segmentation and reached 50.48 Arg-C IoU on test.
 Its full literature review is in `method/SciEvent-Next/LITERATURE.md`; this file
 covers only what is new for HONE.

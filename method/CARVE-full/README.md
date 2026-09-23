@@ -1,7 +1,7 @@
-> **Archived.** This is the previous release of `github.com/Hieuvu4438/CARVE`
+> **Archived.** This is the previous release of `github.com/Hieuvu4438/CARVE` (renamed to `CLAVE`)
 > (last commit `4854e9b`, plus the uncommitted CARVE-simple evaluation that
 > followed it: `scripts/freeze_and_test_simple.py`, `assets/decoding_rules.carve_simple.json`,
-> `docs/PAPER_NOTES.md` §5.10). The CARVE repository now ships **CARVE-simple + HONE**;
+> `docs/PAPER_NOTES.md` §5.10). That repository, now `github.com/Hieuvu4438/CLAVE`, ships **CLAVE** (CARVE-simple + HONE);
 > see `method/HONE/` in this repository for its development record. Paths in this
 > archive assume it is checked out as the root of its own repository.
 
