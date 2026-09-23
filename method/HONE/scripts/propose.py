@@ -54,7 +54,7 @@ FOLD_SEED = 0
 ID2ROLE = {i: l for l, i in ROLE_LABEL2ID.items()}
 ROOT = repo_root()
 CARVE_RUNS = ROOT.parents[0] / "SciEvent-Next" / "artifacts" / "runs"   # frozen CARVE seeds
-SIMPLE_RUNS = ROOT.parents[2] / "CARVE" / "runs"                          # CARVE-simple seeds
+SIMPLE_RUNS = ROOT.parents[2] / "CLAVE" / "runs"                          # CARVE-simple seeds (CLAVE repo)
 ID2MERGED = {i: l for l, i in MERGED_LABEL2ID.items()}
 PROPOSERS = {
     "carve": {"prefix": "", "config": "proposer.json", "ckpt": lambda s: CARVE_RUNS / f"final_s{s}" / "best.pt"},
