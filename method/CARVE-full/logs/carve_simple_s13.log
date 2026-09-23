@@ -1,0 +1,64 @@
+Loading weights:   0%|          | 0/390 [00:00<?, ?it/s]Loading weights:  71%|███████▏  | 278/390 [00:00<00:00, 2779.80it/s]Loading weights: 100%|██████████| 390/390 [00:00<00:00, 3263.91it/s]
+[1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-large
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+ep01 loss 3.433 | type 69.0 | ArgC-IoU 10.58 (P29.6/R6.4) | ArgI-IoU 14.21 | raw 6.21 | t0.3 | RgL 3.90 | 18s
+ep02 loss 2.197 | type 88.6 | ArgC-IoU 21.14 (P48.9/R13.5) | ArgI-IoU 26.81 | raw 13.42 | t0.5 | RgL 43.97 | 36s
+ep03 loss 1.717 | type 91.8 | ArgC-IoU 33.97 (P46.5/R26.8) | ArgI-IoU 41.89 | raw 22.64 | t0.5 | RgL 60.72 | 55s
+ep04 loss 1.337 | type 91.1 | ArgC-IoU 40.67 (P57.1/R31.6) | ArgI-IoU 48.19 | raw 30.97 | t0.6 | RgL 74.38 | 73s
+ep05 loss 1.053 | type 88.6 | ArgC-IoU 41.69 (P49.9/R35.8) | ArgI-IoU 49.88 | raw 30.26 | t0.6 | RgL 78.53 | 91s
+ep06 loss 0.837 | type 89.9 | ArgC-IoU 44.29 (P51.2/R39.0) | ArgI-IoU 50.68 | raw 33.68 | t0.6 | RgL 81.02 | 109s
+ep07 loss 0.652 | type 90.5 | ArgC-IoU 46.29 (P51.5/R42.1) | ArgI-IoU 54.49 | raw 35.92 | t0.6 | RgL 79.31 | 127s
+ep08 loss 0.487 | type 88.6 | ArgC-IoU 42.83 (P46.6/R39.6) | ArgI-IoU 51.09 | raw 33.81 | t0.6 | RgL 80.00 | 145s
+ep09 loss 0.375 | type 89.2 | ArgC-IoU 43.79 (P49.9/R39.0) | ArgI-IoU 50.34 | raw 32.96 | t0.7 | RgL 78.35 | 162s
+ep10 loss 0.295 | type 88.0 | ArgC-IoU 44.76 (P48.9/R41.2) | ArgI-IoU 52.62 | raw 34.10 | t0.7 | RgL 79.48 | 180s
+ep11 loss 0.242 | type 88.6 | ArgC-IoU 45.20 (P50.0/R41.2) | ArgI-IoU 54.91 | raw 34.50 | t0.7 | RgL 80.46 | 197s
+ep12 loss 0.190 | type 88.6 | ArgC-IoU 44.10 (P45.9/R42.5) | ArgI-IoU 52.66 | raw 33.54 | t0.7 | RgL 81.23 | 214s
+ep13 loss 0.158 | type 88.6 | ArgC-IoU 45.81 (P51.5/R41.2) | ArgI-IoU 53.18 | raw 35.63 | t0.8 | RgL 79.47 | 231s
+ep14 loss 0.128 | type 89.2 | ArgC-IoU 46.86 (P49.8/R44.3) | ArgI-IoU 56.02 | raw 35.71 | t0.8 | RgL 80.10 | 248s
+ep15 loss 0.112 | type 86.7 | ArgC-IoU 44.77 (P50.1/R40.4) | ArgI-IoU 53.67 | raw 35.37 | t0.85 | RgL 79.50 | 266s
+ep16 loss 0.090 | type 87.3 | ArgC-IoU 44.29 (P51.2/R39.0) | ArgI-IoU 52.51 | raw 35.69 | t0.9 | RgL 80.71 | 283s
+ep17 loss 0.072 | type 89.2 | ArgC-IoU 46.83 (P47.6/R46.1) | ArgI-IoU 56.44 | raw 36.58 | t0.8 | RgL 80.60 | 300s
+ep18 loss 0.058 | type 89.2 | ArgC-IoU 45.80 (P47.9/R43.9) | ArgI-IoU 55.46 | raw 35.16 | t0.85 | RgL 80.31 | 318s
+ep19 loss 0.050 | type 89.2 | ArgC-IoU 46.25 (P45.4/R47.1) | ArgI-IoU 56.72 | raw 35.75 | t0.8 | RgL 80.11 | 334s
+ep20 loss 0.043 | type 88.6 | ArgC-IoU 46.23 (P48.1/R44.5) | ArgI-IoU 55.02 | raw 37.28 | t0.85 | RgL 79.01 | 352s
+ep21 loss 0.036 | type 88.6 | ArgC-IoU 44.87 (P47.8/R42.3) | ArgI-IoU 52.78 | raw 35.33 | t0.9 | RgL 80.55 | 369s
+ep22 loss 0.029 | type 88.6 | ArgC-IoU 44.76 (P48.4/R41.6) | ArgI-IoU 52.32 | raw 35.68 | t0.9 | RgL 80.22 | 386s
+ep23 loss 0.023 | type 88.6 | ArgC-IoU 45.77 (P45.3/R46.3) | ArgI-IoU 55.32 | raw 37.22 | t0.8 | RgL 79.08 | 404s
+ep24 loss 0.019 | type 89.2 | ArgC-IoU 47.82 (P46.1/R49.7) | ArgI-IoU 57.31 | raw 38.57 | t0.8 | RgL 80.25 | 423s
+ep25 loss 0.016 | type 88.6 | ArgC-IoU 46.27 (P47.8/R44.9) | ArgI-IoU 55.39 | raw 37.26 | t0.9 | RgL 80.05 | 443s
+ep26 loss 0.015 | type 89.2 | ArgC-IoU 46.22 (P45.8/R46.7) | ArgI-IoU 55.98 | raw 37.74 | t0.85 | RgL 79.68 | 460s
+ep27 loss 0.014 | type 88.6 | ArgC-IoU 45.03 (P45.0/R45.1) | ArgI-IoU 54.47 | raw 36.64 | t0.85 | RgL 80.87 | 477s
+ep28 loss 0.011 | type 89.2 | ArgC-IoU 46.22 (P47.6/R44.9) | ArgI-IoU 55.34 | raw 37.61 | t0.9 | RgL 80.03 | 494s
+ep29 loss 0.009 | type 89.2 | ArgC-IoU 45.52 (P43.7/R47.5) | ArgI-IoU 56.12 | raw 37.21 | t0.8 | RgL 80.56 | 511s
+ep30 loss 0.009 | type 88.6 | ArgC-IoU 45.00 (P43.4/R46.7) | ArgI-IoU 55.29 | raw 37.06 | t0.8 | RgL 80.86 | 528s
+
+BEST: {
+  "epoch": 24,
+  "loss": 0.019370051290025003,
+  "type_acc": 89.24050632911393,
+  "arg_c_iou_f1": 47.82187802516941,
+  "argmax_arg_c_iou_f1": 38.5670731707317,
+  "sel_tau": 0.8,
+  "arg_i_iou_f1": 57.30880929332043,
+  "arg_c_iou_p": 46.082089552238806,
+  "arg_c_iou_r": 49.69818913480885,
+  "arg_c_em_f1": 28.84801548886738,
+  "arg_i_em_f1": 33.494675701839306,
+  "trigger_rougeL_f1": 80.25318324492368,
+  "secs": 423
+}

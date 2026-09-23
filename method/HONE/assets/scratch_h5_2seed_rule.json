@@ -1,0 +1,26 @@
+{
+  "rule": {
+    "theta": 0.3,
+    "min_len": 3,
+    "nms": "any",
+    "type_lambda": 1.0,
+    "role_alpha": 0.5
+  },
+  "selection": "max MEAN dev Arg-C IoU over verifier runs",
+  "runs": [
+    "h2_v42_p3",
+    "h2_v13_p3"
+  ],
+  "prop_seeds": [
+    42,
+    13,
+    101
+  ],
+  "ensemble": true,
+  "dev_arg_c_iou_mean": 51.26050420168067,
+  "dev_arg_c_iou_std": 0.0,
+  "dev_per_run": [
+    51.26050420168067
+  ],
+  "frozen_at": "2026-09-23 16:19:59"
+}

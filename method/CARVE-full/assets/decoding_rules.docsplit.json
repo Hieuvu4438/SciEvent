@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "tau": {
+      "_": 0.85
+    },
+    "merge_gap": 0,
+    "min_len": 3
+  },
+  "selection": "max mean dev Arg-C IoU F1 over seeds 42/13/101 (single-model decoding)",
+  "dev_arg_c_iou_f1_mean": 47.792115556200066,
+  "dev_arg_c_iou_f1_std": 1.6398280971270367,
+  "dev_per_seed": [
+    45.91549295774649,
+    48.94894894894895,
+    48.51190476190476
+  ],
+  "seeds": [
+    42,
+    13,
+    101
+  ]
+}

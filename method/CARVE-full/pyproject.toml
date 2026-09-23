@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carve"
+version = "1.0.0"
+description = "Clause-level Argument Recovery Via sEgmentation for scientific event extraction"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = [
+    "torch>=2.4",
+    "transformers>=4.44",
+    "tokenizers>=0.19",
+    "sentencepiece",
+    "accelerate",
+    "numpy",
+    "scikit-learn",
+    "rouge-score",
+]
+
+[project.urls]
+Repository = "https://github.com/Hieuvu4438/CARVE"
+
+[tool.setuptools]
+packages = ["carve"]

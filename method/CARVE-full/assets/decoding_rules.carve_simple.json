@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "tau": {
+      "_": 0.9
+    },
+    "merge_gap": 0,
+    "min_len": 3
+  },
+  "selection": "max mean dev Arg-C IoU F1 over seeds 42/13/101",
+  "dev_mean": 48.10045919628336,
+  "dev_std": 0.9586581423338163,
+  "dev_tau": 0.9,
+  "dev_min_len": 3,
+  "dev_per_seed": [
+    49.19093851132686,
+    47.390396659707726,
+    47.720042417815485
+  ]
+}

@@ -1,0 +1,6 @@
+HONE (full)                                    dev C 50.93 ± 1.23 | test C 53.06 ± 1.04  I 63.05 ± 0.27 | {'role_alpha': 0.5, 'type_lambda': 1.0, 'nms': 'any', 'min_len': 3, 'theta': 0.4}
+− hybrid role (verifier roles only, α=1)       dev C 49.44 ± 0.97 | test C 52.26 ± 1.83  I 63.18 ± 0.46 | {'role_alpha': 1.0, 'type_lambda': 1.0, 'nms': 'any', 'min_len': 3, 'theta': 0.4}
+− verifier role (proposer roles only, α=0)     dev C 50.13 ± 0.39 | test C 53.13 ± 0.54  I 63.18 ± 0.26 | {'role_alpha': 0.0, 'type_lambda': 1.0, 'nms': 'any', 'min_len': 3, 'theta': 0.4}
+− joint type (λ=0)                             dev C 49.66 ± 1.35 | test C 53.12 ± 0.71  I 63.76 ± 0.40 | {'role_alpha': 0.5, 'type_lambda': 0.0, 'nms': 'any', 'min_len': 3, 'theta': 0.35}
+− hybrid role − joint type (pure verifier)     dev C 48.51 ± 0.99 | test C 52.26 ± 1.49  I 63.52 ± 0.20 | {'role_alpha': 1.0, 'type_lambda': 0.0, 'nms': 'any', 'min_len': 3, 'theta': 0.4}
+− collision rule 'any' (iou only)              dev C 50.33 ± 1.27 | test C 52.96 ± 0.85  I 62.94 ± 0.23 | {'role_alpha': 0.5, 'type_lambda': 1.0, 'nms': 'iou', 'min_len': 3, 'theta': 0.4}

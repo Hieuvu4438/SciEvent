@@ -1,0 +1,25 @@
+train candidates 14388 (positive 30.2%) | dev candidates 1764
+Loading weights:   0%|          | 0/390 [00:00<?, ?it/s]Loading weights: 100%|██████████| 390/390 [00:00<00:00, 4336.29it/s]
+[1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-large
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+ep01 loss 0.840 | cand-acc 74.1 | ArgC-IoU 44.92 (P45.4/R44.5) | ArgI 57.72 | rule th=0.4 ml=3 nms=iou | 499s
+ep02 loss 0.503 | cand-acc 76.9 | ArgC-IoU 47.21 (P51.7/R43.5) | ArgI 59.89 | rule th=0.4 ml=3 nms=wis | 1004s
+ep03 loss 0.309 | cand-acc 75.7 | ArgC-IoU 49.16 (P51.4/R47.1) | ArgI 60.08 | rule th=0.4 ml=3 nms=any | 1506s
+ep04 loss 0.183 | cand-acc 75.1 | ArgC-IoU 47.37 (P50.7/R44.5) | ArgI 58.74 | rule th=0.35 ml=2 nms=wis | 2005s
+ep05 loss 0.100 | cand-acc 76.6 | ArgC-IoU 47.87 (P54.2/R42.9) | ArgI 58.43 | rule th=0.7 ml=1 nms=any | 2404s
+BEST {"epoch": 3, "loss": 0.3087244897587339, "cand_acc": 75.73696145124717, "arg_c_iou_f1": 49.159663865546214, "arg_c_p": 51.42857142857142, "arg_c_r": 47.08249496981891, "arg_i_iou_f1": 60.08403361344538, "rougeL": 79.48639273170043, "rule": {"f1": 49.159663865546214, "theta": 0.4, "min_len": 3, "nms": "any"}, "secs": 1506}

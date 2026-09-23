@@ -1,0 +1,84 @@
+Loading weights:   0%|          | 0/390 [00:00<?, ?it/s]Loading weights: 100%|██████████| 390/390 [00:00<00:00, 4595.13it/s]
+[1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-large
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+ep01 loss 3.688 | type 70.9 | ArgC-IoU 3.99 (P20.0/R2.2) | ArgI-IoU 6.16 | raw 2.92 | t0.3 | RgL 1.23 | 22s
+ep02 loss 2.130 | type 83.5 | ArgC-IoU 19.48 (P22.3/R17.3) | ArgI-IoU 27.63 | raw 12.82 | t0.3 | RgL 19.82 | 43s
+ep03 loss 1.709 | type 87.3 | ArgC-IoU 25.80 (P41.5/R18.7) | ArgI-IoU 35.51 | raw 18.99 | t0.5 | RgL 43.31 | 66s
+ep04 loss 1.390 | type 87.3 | ArgC-IoU 38.11 (P46.3/R32.4) | ArgI-IoU 45.68 | raw 28.62 | t0.5 | RgL 65.22 | 88s
+ep05 loss 1.099 | type 89.2 | ArgC-IoU 36.97 (P39.4/R34.8) | ArgI-IoU 42.31 | raw 26.28 | t0.5 | RgL 70.18 | 111s
+ep06 loss 0.878 | type 88.6 | ArgC-IoU 42.94 (P51.1/R37.0) | ArgI-IoU 50.18 | raw 33.44 | t0.6 | RgL 70.94 | 131s
+ep07 loss 0.660 | type 88.6 | ArgC-IoU 39.90 (P52.5/R32.2) | ArgI-IoU 47.88 | raw 28.44 | t0.7 | RgL 75.92 | 155s
+ep08 loss 0.517 | type 88.6 | ArgC-IoU 45.96 (P53.9/R40.0) | ArgI-IoU 54.50 | raw 34.61 | t0.7 | RgL 73.74 | 176s
+ep09 loss 0.399 | type 88.0 | ArgC-IoU 43.90 (P51.9/R38.0) | ArgI-IoU 50.64 | raw 31.56 | t0.7 | RgL 77.15 | 205s
+ep10 loss 0.313 | type 88.6 | ArgC-IoU 42.74 (P51.7/R36.4) | ArgI-IoU 51.24 | raw 32.85 | t0.8 | RgL 78.23 | 228s
+ep11 loss 0.266 | type 87.3 | ArgC-IoU 41.46 (P45.9/R37.8) | ArgI-IoU 50.72 | raw 29.66 | t0.7 | RgL 78.97 | 250s
+ep12 loss 0.210 | type 88.6 | ArgC-IoU 43.56 (P54.2/R36.4) | ArgI-IoU 50.06 | raw 32.26 | t0.85 | RgL 79.91 | 271s
+ep13 loss 0.168 | type 87.3 | ArgC-IoU 43.41 (P57.7/R34.8) | ArgI-IoU 48.43 | raw 33.66 | t0.9 | RgL 77.51 | 292s
+ep14 loss 0.136 | type 88.6 | ArgC-IoU 45.02 (P51.4/R40.0) | ArgI-IoU 54.07 | raw 33.89 | t0.85 | RgL 79.55 | 318s
+ep15 loss 0.119 | type 88.6 | ArgC-IoU 44.54 (P50.5/R39.8) | ArgI-IoU 52.19 | raw 33.66 | t0.85 | RgL 77.85 | 339s
+ep16 loss 0.097 | type 88.0 | ArgC-IoU 45.42 (P55.5/R38.4) | ArgI-IoU 51.61 | raw 33.23 | t0.9 | RgL 79.68 | 360s
+ep17 loss 0.080 | type 88.0 | ArgC-IoU 44.12 (P50.4/R39.2) | ArgI-IoU 52.71 | raw 34.69 | t0.85 | RgL 79.57 | 382s
+ep18 loss 0.066 | type 88.6 | ArgC-IoU 42.84 (P53.3/R35.8) | ArgI-IoU 49.58 | raw 31.98 | t0.93 | RgL 79.14 | 403s
+ep19 loss 0.056 | type 88.6 | ArgC-IoU 45.51 (P46.2/R44.9) | ArgI-IoU 54.69 | raw 35.76 | t0.8 | RgL 79.30 | 424s
+ep20 loss 0.048 | type 88.0 | ArgC-IoU 43.32 (P49.0/R38.8) | ArgI-IoU 51.63 | raw 33.97 | t0.9 | RgL 79.19 | 446s
+ep21 loss 0.041 | type 86.7 | ArgC-IoU 43.24 (P55.5/R35.4) | ArgI-IoU 50.61 | raw 34.24 | t0.95 | RgL 79.36 | 467s
+ep22 loss 0.032 | type 88.0 | ArgC-IoU 43.52 (P51.2/R37.8) | ArgI-IoU 50.93 | raw 33.28 | t0.93 | RgL 79.77 | 488s
+ep23 loss 0.028 | type 88.0 | ArgC-IoU 41.69 (P52.0/R34.8) | ArgI-IoU 49.40 | raw 33.64 | t0.95 | RgL 79.02 | 510s
+ep24 loss 0.024 | type 87.3 | ArgC-IoU 43.96 (P55.0/R36.6) | ArgI-IoU 51.21 | raw 34.11 | t0.95 | RgL 79.17 | 529s
+ep25 loss 0.021 | type 88.6 | ArgC-IoU 43.49 (P44.4/R42.7) | ArgI-IoU 51.49 | raw 35.44 | t0.85 | RgL 79.05 | 550s
+ep26 loss 0.018 | type 89.2 | ArgC-IoU 43.91 (P47.8/R40.6) | ArgI-IoU 52.17 | raw 35.00 | t0.9 | RgL 79.47 | 571s
+ep27 loss 0.014 | type 88.0 | ArgC-IoU 43.33 (P50.0/R38.2) | ArgI-IoU 51.31 | raw 34.52 | t0.93 | RgL 79.17 | 593s
+ep28 loss 0.013 | type 88.6 | ArgC-IoU 43.58 (P44.5/R42.7) | ArgI-IoU 52.83 | raw 34.58 | t0.85 | RgL 79.22 | 614s
+ep29 loss 0.013 | type 88.6 | ArgC-IoU 43.96 (P50.7/R38.8) | ArgI-IoU 51.71 | raw 34.77 | t0.93 | RgL 78.96 | 635s
+ep30 loss 0.011 | type 88.6 | ArgC-IoU 44.04 (P50.5/R39.0) | ArgI-IoU 52.67 | raw 35.18 | t0.93 | RgL 79.51 | 656s
+
+BEST: {
+  "epoch": 8,
+  "loss": 0.5170870631700382,
+  "type_acc": 88.60759493670885,
+  "arg_c_iou_f1": 45.95842956120092,
+  "argmax_arg_c_iou_f1": 34.606391270459866,
+  "sel_tau": 0.7,
+  "arg_i_iou_f1": 54.503464203233264,
+  "arg_c_iou_p": 53.929539295392956,
+  "arg_c_iou_r": 40.04024144869216,
+  "arg_c_em_f1": 28.175519630484985,
+  "arg_i_em_f1": 32.10161662817551,
+  "trigger_rougeL_f1": 73.74353258996193,
+  "secs": 176
+}
+Loading weights:   0%|          | 0/390 [00:00<?, ?it/s]Loading weights: 100%|██████████| 390/390 [00:00<00:00, 5314.85it/s]
+[1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-large
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[oof] fold 0 seed 42: 257 held-out windows, 1330 candidates -> /home/haipd/SciEvent/method/HONE/data/cands/oof_k0_s42.jsonl
+[oof] deleted /home/haipd/SciEvent/method/HONE/runs/oof_k0_s42/best.pt

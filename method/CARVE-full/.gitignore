@@ -1,0 +1,29 @@
+# Benchmark checkout (fetched by scripts/setup_data.sh)
+third_party/
+
+# Experiment outputs
+runs/
+preds/
+data/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments and editors
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.DS_Store

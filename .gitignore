@@ -17,3 +17,11 @@ method/TARS-SciEvent/artifacts/logs/
 method/TARS-SciEvent/artifacts/audits/*.log
 method/TARS-SciEvent/artifacts/audits/pip_freeze*.txt
 method/TARS-SciEvent/private_data/
+
+# HONE and archived CARVE-full: checkpoints, fold splits and candidate files are
+# regenerable and too large for Git; logs, predictions and frozen rules are kept
+method/HONE/runs/
+method/HONE/data/
+method/CARVE-full/runs/
+method/CARVE-full/third_party/
+*.egg-info/
